@@ -1,6 +1,6 @@
 {
   "name": "kyxbot-database",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "database access module for kyxbot",
   "main": "index.js",
   "scripts": {
