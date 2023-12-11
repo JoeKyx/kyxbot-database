@@ -21,7 +21,7 @@ export const removeModRole = async (guildId) => {
 export const addUserRole = async (guildId, roleId) => {
     await db
         .insert(permissions)
-        .values({ guild_id: guildId, role: 'user', group_id: roleId });
+        .values({ guild_id: guildId, role: 'normal', group_id: roleId });
 };
 export const removeUserRole = async (guildId, roleId) => {
     await db
@@ -48,10 +48,10 @@ export const findPermission = async (guildId, groupIds, role) => {
 };
 export const hasAccess = async (guildId, groupIds) => {
     const hasEntries = await db.query.permissions.findFirst({
-        where: and(eq(permissions.guild_id, guildId), eq(permissions.role, 'user')),
+        where: and(eq(permissions.guild_id, guildId), eq(permissions.role, 'normal')),
     });
     if (!hasEntries) {
         return true;
     }
-    return await findPermission(guildId, groupIds, 'user');
+    return await findPermission(guildId, groupIds, 'normal');
 };

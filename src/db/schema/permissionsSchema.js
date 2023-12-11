@@ -1,7 +1,7 @@
 import { pgEnum, pgTable, primaryKey, varchar } from 'drizzle-orm/pg-core';
 import { createInsertSchema, createSelectSchema } from 'drizzle-zod';
 import Zod from 'zod';
-export const roleEnum = pgEnum('role', ['admin', 'manager', 'user']);
+export const roleEnum = pgEnum('role', ['admin', 'manager', 'normal']);
 export const permissions = pgTable('permissions', {
     guild_id: varchar('guild_id'),
     role: roleEnum('role'),

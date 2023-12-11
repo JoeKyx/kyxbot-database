@@ -1,7 +1,7 @@
 import { and, eq, inArray } from 'drizzle-orm';
 import { db } from '..';
 import { GuildId } from '../schema/guildSettingsSchema';
-import { NewPermission, Role, permissions } from '../schema/permissionsSchema';
+import { NewPermission, Role, permissions, roleEnum } from '../schema/permissionsSchema';
 
 export const createPermissions = async (newPermission: NewPermission) => {
   console.log(`Inserting permissions with id: ${permissions.guild_id}`);
@@ -30,7 +30,7 @@ export const removeModRole = async (guildId: GuildId) => {
 export const addUserRole = async (guildId: GuildId, roleId: string) => {
   await db
     .insert(permissions)
-    .values({ guild_id: guildId, role: 'user', group_id: roleId });
+    .values({ guild_id: guildId, role: 'normal', group_id: roleId });
 };
 
 export const removeUserRole = async (guildId: GuildId, roleId: string) => {
@@ -77,11 +77,11 @@ export const findPermission = async (
 
 export const hasAccess = async (guildId: string, groupIds: string[]) => {
   const hasEntries = await db.query.permissions.findFirst({
-    where: and(eq(permissions.guild_id, guildId), eq(permissions.role, 'user')),
+    where: and(eq(permissions.guild_id, guildId), eq(permissions.role, 'normal')),
   });
 
   if (!hasEntries) {
     return true;
   }
-  return await findPermission(guildId, groupIds, 'user');
+  return await findPermission(guildId, groupIds, 'normal');
 };
