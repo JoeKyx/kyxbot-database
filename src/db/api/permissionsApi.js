@@ -28,6 +28,15 @@ export const removeUserRole = async (guildId, roleId) => {
         .delete(permissions)
         .where(and(eq(permissions.guild_id, guildId), eq(permissions.group_id, roleId)));
 };
+export const getModRoles = async (guildId) => {
+    const result = await db.query.permissions.findMany({
+        where: and(eq(permissions.guild_id, guildId), eq(permissions.role, 'manager')),
+    });
+    if (!result) {
+        return null;
+    }
+    return result;
+};
 export const getPermissionsForGuildAndGroup = async (guildId, groupId) => {
     const result = await db.query.permissions.findFirst({
         where: and(eq(permissions.guild_id, guildId), eq(permissions.group_id, groupId)),

@@ -41,6 +41,16 @@ export const removeUserRole = async (guildId: GuildId, roleId: string) => {
     );
 };
 
+export const getModRoles = async (guildId: GuildId) => {
+  const result = await db.query.permissions.findMany({
+    where: and(eq(permissions.guild_id, guildId), eq(permissions.role, 'manager')),
+  });
+  if (!result) {
+    return null;
+  }
+  return result;
+}
+
 export const getPermissionsForGuildAndGroup = async (
   guildId: string,
   groupId: string
