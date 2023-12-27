@@ -21,3 +21,13 @@ export const updateGuildSettings = async (guildId, guildSettings) => {
         .set(guildSettings)
         .where(eq(guild_settings.guild_id, guildId));
 };
+export const upsertGuildSettings = async (guildId, guildSettings) => {
+    // Check if guild settings already exist
+    const existingGuildSettings = await getGuildSettings(guildId);
+    if (existingGuildSettings) {
+        await updateGuildSettings(guildId, guildSettings);
+    }
+    else {
+        await createGuildSettings(guildSettings);
+    }
+};
