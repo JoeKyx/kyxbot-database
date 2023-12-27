@@ -64,3 +64,20 @@ export const hasAccess = async (guildId, groupIds) => {
     }
     return await findPermission(guildId, groupIds, 'normal');
 };
+export const getUserPrivileges = async (guildId, groupIds) => {
+    const hasEntries = await db.query.permissions.findFirst({
+        where: and(eq(permissions.guild_id, guildId), eq(permissions.role, 'normal')),
+    });
+    if (!hasEntries) {
+        return 'normal';
+    }
+    const isManager = await findPermission(guildId, groupIds, 'manager');
+    if (isManager) {
+        return 'manager';
+    }
+    const isUser = await findPermission(guildId, groupIds, 'normal');
+    if (isUser) {
+        return 'normal';
+    }
+    return 'none';
+};
