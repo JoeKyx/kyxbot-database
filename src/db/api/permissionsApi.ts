@@ -123,5 +123,17 @@ export const getUserPrivileges = async (guildId: string, groupIds: string[]) => 
     return 'normal';
   }
   return 'none';
+}
 
+export const resetPermissions = async (guildId: string, modGroups: string[], userGroups: string[]) => {
+  await db.delete(permissions).where(eq(permissions.guild_id, guildId));
+  // insert a new record for each mod Group
+  for (const group of modGroups) {
+    await db.insert(permissions).values({ guild_id: guildId, role: 'manager', group_id: group });
+  }
+  // insert a new record for each user Group
+  for (const group of userGroups) {
+    await db.insert(permissions).values({ guild_id: guildId, role: 'normal', group_id: group });
+  }
+  
 }
