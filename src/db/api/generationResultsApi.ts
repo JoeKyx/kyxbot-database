@@ -1,4 +1,4 @@
-import { and, eq } from "drizzle-orm";
+import { and, desc, eq } from "drizzle-orm";
 import { db } from "..";
 import {
   NewImageGenerationResult,
@@ -33,6 +33,31 @@ export const getGenerationResultsFromUser = async (discordId: DiscordId) => {
 
   return generationResults;
 };
+
+export const getGenerationResultsFromUserPaginated = async (discordId: DiscordId, page?: number, pageSize?: number) => {
+  if(!page || !pageSize) {
+    return getGenerationResultsFromUser(discordId);
+  }
+  console.log(`Getting generation results for discord id: ${discordId}`);
+  const generationResults = await db.query.image_generations.findMany({
+    columns: {
+      prompt: true,
+    },
+    with: {
+      generation_results: {
+        columns: {
+          image_url: true,
+        },
+      },
+    },
+    where: eq(image_generations.user, discordId),
+    orderBy: [desc(image_generations.timestamp)],
+    limit: pageSize,
+    offset: page * pageSize,
+  });
+
+  return generationResults;
+}
 
 export const getGenerationResultsFromUserWithinGuild = async (
   discordId: DiscordId,

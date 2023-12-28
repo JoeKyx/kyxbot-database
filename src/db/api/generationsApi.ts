@@ -6,6 +6,7 @@ import {
   NewImageGeneration,
   image_generations,
 } from "../schema/imageGenerationsSchema";
+import { UserInformationId } from "../schema/userInformations";
 
 export const addGeneration = async (generation: NewImageGeneration) => {
   console.log(`Inserting generation with id: ${generation.generation_id}`);
@@ -22,3 +23,4 @@ export const updateGenerationStatus = async (
     .set({ status: generationStatus })
     .where(eq(image_generations.generation_id, generationId));
 };
+
