@@ -1,0 +1,1 @@
+ALTER TABLE "image_generations" ADD COLUMN "timestamp" timestamp DEFAULT CURRENT_TIMESTAMP NOT NULL;

@@ -1,4 +1,4 @@
-import { and, desc, eq } from "drizzle-orm";
+import { and, count, desc, eq } from "drizzle-orm";
 import { db } from "..";
 import { image_generation_results, } from "../schema/imageGenerationsResultsSchema";
 import { image_generations } from "../schema/imageGenerationsSchema";
@@ -62,4 +62,9 @@ export const getGenerationResultsFromUserWithinGuild = async (discordId, guildId
         where: and(eq(image_generations.user, discordId), eq(image_generations.guild, guildId)),
     });
     return generationResults;
+};
+export const getAmountOfPagesForUser = async (discordId, pageSize) => {
+    const results = await db.select({ value: count() }).from(image_generations).where(eq(image_generations.user, discordId)).limit(1);
+    const amountOfImageGens = results[0].value ? results[0].value : 0;
+    return Math.ceil(amountOfImageGens / pageSize);
 };
