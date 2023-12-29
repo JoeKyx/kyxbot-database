@@ -37,7 +37,7 @@ export const getGenerationResultsFromUser = async (discordId: DiscordId) => {
 export const getGenerationResultsFromUserPaginated = async (discordId: DiscordId, page?: number, pageSize?: number) => {
   console.log('Page: ', page)
   console.log('Page size: ', pageSize)
-  if(!page || !pageSize) {
+  if(page === null || page === undefined || !pageSize) {
     console.log('Missing page or pageSize')
 
     return getGenerationResultsFromUser(discordId);
