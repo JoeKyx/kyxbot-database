@@ -24,12 +24,13 @@ export const getGenerationResultsFromUser = async (discordId) => {
     return generationResults;
 };
 export const getGenerationResultsFromUserPaginated = async (discordId, page, pageSize) => {
+    console.log('Page: ', page);
+    console.log('Page size: ', pageSize);
     if (!page || !pageSize) {
+        console.log('Missing page or pageSize');
         return getGenerationResultsFromUser(discordId);
     }
     console.log(`Getting generation results for discord id: ${discordId}`);
-    console.log('Page: ', page);
-    console.log('Page size: ', pageSize);
     const generationResults = await db.query.image_generations.findMany({
         columns: {
             prompt: true,
