@@ -39,6 +39,8 @@ export const getGenerationResultsFromUserPaginated = async (discordId: DiscordId
     return getGenerationResultsFromUser(discordId);
   }
   console.log(`Getting generation results for discord id: ${discordId}`);
+  console.log('Page: ', page)
+  console.log('Page size: ', pageSize)
   const generationResults = await db.query.image_generations.findMany({
     columns: {
       prompt: true,
