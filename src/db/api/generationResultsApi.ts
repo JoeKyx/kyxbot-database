@@ -20,6 +20,7 @@ export const getGenerationResultsFromUser = async (discordId: DiscordId) => {
   const generationResults = await db.query.image_generations.findMany({
     columns: {
       prompt: true,
+      timestamp: true,
     },
     with: {
       generation_results: {
