@@ -35,6 +35,7 @@ export const getGenerationResultsFromUserPaginated = async (discordId, page, pag
     const generationResults = await db.query.image_generations.findMany({
         columns: {
             prompt: true,
+            timestamp: true,
         },
         with: {
             generation_results: {
@@ -55,6 +56,7 @@ export const getGenerationResultsFromUserWithinGuild = async (discordId, guildId
     const generationResults = await db.query.image_generations.findMany({
         columns: {
             prompt: true,
+            timestamp: true,
         },
         with: {
             generation_results: {
