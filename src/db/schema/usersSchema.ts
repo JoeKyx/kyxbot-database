@@ -14,3 +14,4 @@ export const discordIdSchema = selectUserSchema.pick({ discordId: true });
 
 export type User = z.infer<typeof selectUserSchema>;
 export type DiscordId = z.infer<typeof discordIdSchema>["discordId"];
+
