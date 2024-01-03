@@ -1,5 +1,5 @@
 import { and, count, desc, eq, sql } from "drizzle-orm";
-import { db } from "..";
+import { db } from "../index";
 import {
   NewImageGenerationResult,
   image_generation_results,

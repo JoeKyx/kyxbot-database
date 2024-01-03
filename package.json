@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
     "db:generate": "pnpm drizzle-kit generate:pg",
     "db:migrate": "tsx ./src/db/migrate.ts",
     "db:drop": "drizzle-kit drop"
@@ -14,12 +15,15 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.10.4",
-    "typescript": "^5.3.3"
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   },
   "dependencies": {
     "dotenv": "^16.3.1",
     "drizzle-kit": "^0.20.6",
-    "drizzle-orm": "^0.29.1",
+    "drizzle-orm": "^0.29.3",
     "drizzle-zod": "^0.5.1",
     "postgres": "^3.4.3",
     "zod": "^3.22.4",
