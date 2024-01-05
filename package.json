@@ -4,7 +4,6 @@
   "description": "database access module for kyxbot",
   "main": "dist/kyxbot-database.js",
   "type": "module",
-  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
