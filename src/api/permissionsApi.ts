@@ -1,5 +1,5 @@
 import { and, eq, inArray } from 'drizzle-orm';
-import { db } from '..';
+import { db } from '../kyxbot-database';
 import { GuildId } from '../schema/guildSettingsSchema';
 import { NewPermission, Role, permissions, roleEnum } from '../schema/permissionsSchema';
 

@@ -1,5 +1,5 @@
 import { eq } from "drizzle-orm";
-import { db } from "..";
+import { db } from "../kyxbot-database";
 import {
   GuildId,
   NewGuildSettings,

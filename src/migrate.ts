@@ -1,5 +1,5 @@
 import "dotenv/config";
-import { db, client } from "./";
+import { db, client } from "./kyxbot-database";
 import { migrate } from "drizzle-orm/postgres-js/migrator";
 
 // This will run migrations on the database, skipping the ones already applied

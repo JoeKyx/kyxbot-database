@@ -1,22 +1,12 @@
-import { and, count, desc, eq, sql } from "drizzle-orm";
-import { db } from "../kyxbot-database";
-import {
-  NewImageGenerationResult,
-  image_generation_results,
-} from "../schema/imageGenerationsResultsSchema";
-import { image_generations } from "../schema/imageGenerationsSchema";
-import { DiscordId } from "../schema/usersSchema";
-import { GuildId } from "../schema/guildSettingsSchema";
-
-
-export const addGenerationResults = async (
-  generationResults: NewImageGenerationResult[]
-) => {
+import { and, count, desc, eq } from 'drizzle-orm';
+import { db } from '../kyxbot-database';
+import { image_generation_results } from '../schema/imageGenerationsResultsSchema';
+import { image_generations } from '../schema/imageGenerationsSchema';
+export const addGenerationResults = async (generationResults) => {
   console.log(`Inserting generation results`);
   await db.insert(image_generation_results).values(generationResults);
 };
-
-export const getGenerationResultsFromUser = async (discordId: DiscordId) => {
+export const getGenerationResultsFromUser = async (discordId) => {
   console.log(`Getting generation results for discord id: ${discordId}`);
   const generationResults = await db.query.image_generations.findMany({
     columns: {
@@ -32,20 +22,20 @@ export const getGenerationResultsFromUser = async (discordId: DiscordId) => {
     },
     where: eq(image_generations.user, discordId),
   });
-
   return generationResults;
 };
-
-export const getGenerationResultsFromUserPaginated = async (discordId: DiscordId, page?: number, pageSize?: number) => {
-  console.log('Page: ', page)
-  console.log('Page size: ', pageSize)
-  if(page === null || page === undefined || !pageSize) {
-    console.log('Missing page or pageSize')
-
+export const getGenerationResultsFromUserPaginated = async (
+  discordId,
+  page,
+  pageSize
+) => {
+  console.log('Page: ', page);
+  console.log('Page size: ', pageSize);
+  if (page === null || page === undefined || !pageSize) {
+    console.log('Missing page or pageSize');
     return getGenerationResultsFromUser(discordId);
   }
   console.log(`Getting generation results for discord id: ${discordId}`);
-
   const generationResults = await db.query.image_generations.findMany({
     columns: {
       prompt: true,
@@ -63,13 +53,11 @@ export const getGenerationResultsFromUserPaginated = async (discordId: DiscordId
     limit: pageSize,
     offset: page * pageSize,
   });
-
   return generationResults;
-}
-
+};
 export const getGenerationResultsFromUserWithinGuild = async (
-  discordId: DiscordId,
-  guildId: GuildId
+  discordId,
+  guildId
 ) => {
   console.log(
     `Getting generation results for discord id: ${discordId} within guild: ${guildId}`
@@ -91,23 +79,14 @@ export const getGenerationResultsFromUserWithinGuild = async (
       eq(image_generations.guild, guildId)
     ),
   });
-
   return generationResults;
 };
-
-export const getAmountOfPagesForUser = async (discordId: DiscordId, pageSize: number) => {
-  const results = await db.select({ value: count() }).from(image_generations).where(eq(image_generations.user, discordId)).limit(1)
-
+export const getAmountOfPagesForUser = async (discordId, pageSize) => {
+  const results = await db
+    .select({ value: count() })
+    .from(image_generations)
+    .where(eq(image_generations.user, discordId))
+    .limit(1);
   const amountOfImageGens = results[0].value ? results[0].value : 0;
   return Math.ceil(amountOfImageGens / pageSize);
-}
-
-const generationResultsApi = {
-  addGenerationResults,
-  getGenerationResultsFromUser,
-  getGenerationResultsFromUserPaginated,
-  getGenerationResultsFromUserWithinGuild,
-  getAmountOfPagesForUser,
-}
-
-export default generationResultsApi;
+};

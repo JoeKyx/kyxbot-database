@@ -1,5 +1,5 @@
 import { and, desc, eq } from "drizzle-orm";
-import { db } from "..";
+import { db } from "../kyxbot-database";
 import {
   NewUserInformation,
   userInformations,

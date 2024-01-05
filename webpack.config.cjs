@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   mode: 'production',
   target: 'node',
-  entry: './src/index.ts', // Replace with your main entry file
+  entry: './src/kyxbot-database.ts', // Replace with your main entry file
   module: {
     rules: [
       {
@@ -17,9 +17,9 @@ module.exports = {
     extensions: ['.ts', '.js'],
   },
   output: {
-    filename: 'index.js', // Output file name
+    filename: 'kyxbot-database.js', // Output file name
     path: path.resolve(__dirname, 'dist'),
-    library: 'kyxbotDatabase', // Expose your library
+    library: 'kyxbot-database', // Expose your library
     libraryTarget: 'umd',
     globalObject: 'this',
   },

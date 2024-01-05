@@ -1,5 +1,5 @@
 import { and, eq } from "drizzle-orm";
-import { db } from "..";
+import { db } from "../kyxbot-database";
 import {
   NewUploadedImage,
   uploaded_images,
