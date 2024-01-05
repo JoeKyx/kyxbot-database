@@ -2,7 +2,7 @@
   "name": "kyxbot-database",
   "version": "1.0.1",
   "description": "database access module for kyxbot",
-  "main": "dist/kyxbot-database.js",
+  "main": "dist/index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
