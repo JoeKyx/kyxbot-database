@@ -8,6 +8,7 @@ import { image_generations } from "../schema/imageGenerationsSchema";
 import { DiscordId } from "../schema/usersSchema";
 import { GuildId } from "../schema/guildSettingsSchema";
 
+
 export const addGenerationResults = async (
   generationResults: NewImageGenerationResult[]
 ) => {
@@ -100,3 +101,13 @@ export const getAmountOfPagesForUser = async (discordId: DiscordId, pageSize: nu
   const amountOfImageGens = results[0].value ? results[0].value : 0;
   return Math.ceil(amountOfImageGens / pageSize);
 }
+
+const generationResultsApi = {
+  addGenerationResults,
+  getGenerationResultsFromUser,
+  getGenerationResultsFromUserPaginated,
+  getGenerationResultsFromUserWithinGuild,
+  getAmountOfPagesForUser,
+}
+
+export default generationResultsApi;

@@ -53,7 +53,7 @@ export declare const image_generation_results: import("drizzle-orm/pg-core").PgT
     };
     dialect: "pg";
 }>;
-export declare const insertImageGenerationSchema: import("zod").ZodObject<{
+export declare const insertImageGenerationResultSchema: import("zod").ZodObject<{
     generation_id: import("zod").ZodString;
     image_id: import("zod").ZodString;
     image_url: import("zod").ZodString;
@@ -69,8 +69,8 @@ export declare const insertImageGenerationSchema: import("zod").ZodObject<{
     image_url: string;
     upscaled_image_url?: string | null | undefined;
 }>;
-export type NewImageGenerationResult = Zod.infer<typeof insertImageGenerationSchema>;
-export type ImageGenerationResultId = Zod.infer<typeof insertImageGenerationSchema>["image_id"];
+export type NewImageGenerationResult = Zod.infer<typeof insertImageGenerationResultSchema>;
+export type ImageGenerationResultId = Zod.infer<typeof insertImageGenerationResultSchema>["image_id"];
 export declare const imageGenerationResultsRelations: import("drizzle-orm").Relations<"image_generation_results", {
     image_generation: import("drizzle-orm").One<"image_generations", true>;
 }>;

@@ -137,3 +137,19 @@ export const resetPermissions = async (guildId: string, modGroups: string[], use
   }
   
 }
+
+const permissionsApi = {
+  createPermissions,
+  setModRole,
+  removeModRole,
+  addUserRole,
+  removeUserRole,
+  getModRoles,
+  getUserRoles,
+  getPermissionsForGuildAndGroup,
+  hasAccess,
+  getUserPrivileges,
+  resetPermissions,
+};
+
+export default permissionsApi;

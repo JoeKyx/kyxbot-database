@@ -42,3 +42,11 @@ export const upsertGuildSettings = async (  guildId: GuildId, guildSettings: New
   }
 }
 
+const guildSettingsApi = {
+  createGuildSettings,
+  getGuildSettings,
+  updateGuildSettings,
+  upsertGuildSettings,
+};
+
+export default guildSettingsApi;

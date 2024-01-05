@@ -50,3 +50,11 @@ export const getUserInformationInGuild = async (
 
   return userInformation;
 };
+
+const userInformationApi = {
+  insertUserInformation,
+  getUserInformation,
+  getUserInformationInGuild,
+};
+
+export default userInformationApi;

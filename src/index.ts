@@ -2,7 +2,7 @@ import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
 
 import dotenv from "dotenv";
-import { guild_settings } from "./schema/guildSettingsSchema";
+import { NewGuildSettings, guild_settings } from "./schema/guildSettingsSchema";
 import {
   imageGenerationResultsRelations,
   image_generation_results,
@@ -16,6 +16,7 @@ import { uploaded_images } from "./schema/uploadedImageSchema";
 import { upscaled_images } from "./schema/upscaledImagesSchema";
 import { userInformations } from "./schema/userInformations";
 import { users } from "./schema/usersSchema";
+
 
 dotenv.config();
 
@@ -40,3 +41,20 @@ const schema = {
 
 export const client = postgres(connectionString, { prepare: false });
 export const db = drizzle(client, { schema });
+
+export * from './schema/guildSettingsSchema';
+export * from './schema/imageGenerationsResultsSchema';
+export * from './schema/imageGenerationsSchema';
+export * from './schema/permissionsSchema';
+export * from './schema/uploadedImageSchema';
+export * from './schema/upscaledImagesSchema';
+export * from './schema/userInformations';
+export * from './schema/usersSchema';
+export * from './api/generationResultsApi';
+export * from './api/generationsApi';
+export * from './api/guildSettingsApi';
+export * from './api/permissionsApi';
+export * from './api/uploadImageApi';
+export * from './api/upscaleImageApi';
+export * from './api/userInformationApi';
+export * from './api/usersApi';

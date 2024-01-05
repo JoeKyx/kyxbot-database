@@ -24,3 +24,9 @@ export const updateGenerationStatus = async (
     .where(eq(image_generations.generation_id, generationId));
 };
 
+const generationsApi = {
+  addGeneration,
+  updateGenerationStatus,
+};
+
+export default generationsApi;

@@ -1,5 +1,5 @@
-import { db } from "../index.js";
-import { DiscordId, User, users } from "../schema/usersSchema.js";
+import { db } from "../index";
+import { DiscordId, User, users } from "../schema/usersSchema";
 import { eq } from "drizzle-orm";
 import "dotenv/config";
 
@@ -25,3 +25,10 @@ export const createNewUser = async (discordId: DiscordId): Promise<User> => {
     .returning();
   return user[0];
 };
+
+const usersApi = {
+  getUserByDiscordId,
+  createNewUser,
+};
+
+export default usersApi;

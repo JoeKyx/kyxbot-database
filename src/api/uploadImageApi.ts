@@ -32,3 +32,11 @@ export const getUploadedImageByName = async (
   });
   return uploadedImage;
 };
+
+const uploadImageApi = {
+  insertUploadedImage,
+  getUploadedImages,
+  getUploadedImageByName,
+};
+
+export default uploadImageApi;

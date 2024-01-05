@@ -12,16 +12,16 @@ export const image_generation_results = pgTable("image_generation_results", {
   upscaled_image_url: text("upscaled_image_url"),
 });
 
-export const insertImageGenerationSchema = createInsertSchema(
+export const insertImageGenerationResultSchema = createInsertSchema(
   image_generation_results
 );
 
 export type NewImageGenerationResult = Zod.infer<
-  typeof insertImageGenerationSchema
+  typeof insertImageGenerationResultSchema
 >;
 
 export type ImageGenerationResultId = Zod.infer<
-  typeof insertImageGenerationSchema
+  typeof insertImageGenerationResultSchema
 >["image_id"];
 
 export const imageGenerationResultsRelations = relations(

@@ -22,3 +22,27 @@ export declare const getUserInformationInGuild: (discordId: DiscordId, guildId: 
     id: number;
     information: string;
 }[]>;
+declare const userInformationApi: {
+    insertUserInformation: (newUserInformation: NewUserInformation) => Promise<{
+        user: string;
+        guild: string;
+        timestamp: Date;
+        id: number;
+        information: string;
+    }>;
+    getUserInformation: (discordId: DiscordId) => Promise<{
+        user: string;
+        guild: string;
+        timestamp: Date;
+        id: number;
+        information: string;
+    }[]>;
+    getUserInformationInGuild: (discordId: DiscordId, guildId: GuildId) => Promise<{
+        user: string;
+        guild: string;
+        timestamp: Date;
+        id: number;
+        information: string;
+    }[]>;
+};
+export default userInformationApi;
