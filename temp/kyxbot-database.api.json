@@ -204,7 +204,7 @@
               "text": "<void>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/generationsApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "addGeneration",
@@ -245,7 +245,7 @@
               "text": "<void>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/generationResultsApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "addGenerationResults",
@@ -286,41 +286,13 @@
               "text": "<void>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/permissionsApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "addUserRole",
           "variableTypeTokenRange": {
             "startIndex": 1,
             "endIndex": 6
-          }
-        },
-        {
-          "kind": "Variable",
-          "canonicalReference": "kyxbot-database!client:var",
-          "docComment": "",
-          "excerptTokens": [
-            {
-              "kind": "Content",
-              "text": "client: "
-            },
-            {
-              "kind": "Reference",
-              "text": "postgres.Sql",
-              "canonicalReference": "postgres!postgres.Sql:interface"
-            },
-            {
-              "kind": "Content",
-              "text": "<{}>"
-            }
-          ],
-          "fileUrlPath": "src/kyxbot-database.ts",
-          "isReadonly": true,
-          "releaseTag": "Public",
-          "name": "client",
-          "variableTypeTokenRange": {
-            "startIndex": 1,
-            "endIndex": 3
           }
         },
         {
@@ -355,7 +327,7 @@
               "text": "<void>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/guildSettingsApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "createGuildSettings",
@@ -405,7 +377,7 @@
               "text": ">"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/usersApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "createNewUser",
@@ -446,7 +418,7 @@
               "text": "<void>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/permissionsApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "createPermissions",
@@ -487,7 +459,7 @@
               "text": "<void>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/upscaleImageApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "createUpscaledImage",
@@ -497,500 +469,13 @@
           }
         },
         {
-          "kind": "Variable",
-          "canonicalReference": "kyxbot-database!db:var",
-          "docComment": "",
-          "excerptTokens": [
-            {
-              "kind": "Content",
-              "text": "db: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PostgresJsDatabase",
-              "canonicalReference": "drizzle-orm!PostgresJsDatabase:type"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nusers: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgTableWithColumns",
-              "canonicalReference": "drizzle-orm!PgTableWithColumns:type"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"users\";\nschema: undefined;\ncolumns: {\ndiscordId: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"discord_id\";\ntableName: \"users\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nmoney: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"money\";\ntableName: \"users\";\ndataType: \"number\";\ncolumnType: \"PgInteger\";\ndata: number;\ndriverParam: string | number;\nnotNull: true;\nhasDefault: true;\nenumValues: undefined;\nbaseColumn: never;\n}, {}, {}>;\n};\ndialect: \"pg\";\n}>;\nimage_generations: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgTableWithColumns",
-              "canonicalReference": "drizzle-orm!PgTableWithColumns:type"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"image_generations\";\nschema: undefined;\ncolumns: {\ngeneration_id: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"generation_id\";\ntableName: \"image_generations\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nuser: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"user\";\ntableName: \"image_generations\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nguild: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"guild\";\ntableName: \"image_generations\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nprompt: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"prompt\";\ntableName: \"image_generations\";\ndataType: \"string\";\ncolumnType: \"PgText\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\ninteractionId: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"message_id\";\ntableName: \"image_generations\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nstatus: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"status\";\ntableName: \"image_generations\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\ntimestamp: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"timestamp\";\ntableName: \"image_generations\";\ndataType: \"date\";\ncolumnType: \"PgTimestamp\";\ndata: "
-            },
-            {
-              "kind": "Reference",
-              "text": "Date",
-              "canonicalReference": "!Date:interface"
-            },
-            {
-              "kind": "Content",
-              "text": ";\ndriverParam: string;\nnotNull: true;\nhasDefault: true;\nenumValues: undefined;\nbaseColumn: never;\n}, {}, {}>;\n};\ndialect: \"pg\";\n}>;\nimage_generation_results: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgTableWithColumns",
-              "canonicalReference": "drizzle-orm!PgTableWithColumns:type"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"image_generation_results\";\nschema: undefined;\ncolumns: {\nimage_id: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"image_id\";\ntableName: \"image_generation_results\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\ngeneration_id: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"generation_id\";\ntableName: \"image_generation_results\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nimage_url: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"image_url\";\ntableName: \"image_generation_results\";\ndataType: \"string\";\ncolumnType: \"PgText\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nupscaled_image_url: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"upscaled_image_url\";\ntableName: \"image_generation_results\";\ndataType: \"string\";\ncolumnType: \"PgText\";\ndata: string;\ndriverParam: string;\nnotNull: false;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\n};\ndialect: \"pg\";\n}>;\nupscaled_images: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgTableWithColumns",
-              "canonicalReference": "drizzle-orm!PgTableWithColumns:type"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"upscaled_images\";\nschema: undefined;\ncolumns: {\nvariation_id: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"variation_id\";\ntableName: \"upscaled_images\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nupscaled_by: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"upscaled_by\";\ntableName: \"upscaled_images\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nimage_url: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"image_url\";\ntableName: \"upscaled_images\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\noriginal_image: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"original_image\";\ntableName: \"upscaled_images\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\ntimestamp: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"timestamp\";\ntableName: \"upscaled_images\";\ndataType: \"date\";\ncolumnType: \"PgTimestamp\";\ndata: "
-            },
-            {
-              "kind": "Reference",
-              "text": "Date",
-              "canonicalReference": "!Date:interface"
-            },
-            {
-              "kind": "Content",
-              "text": ";\ndriverParam: string;\nnotNull: true;\nhasDefault: true;\nenumValues: undefined;\nbaseColumn: never;\n}, {}, {}>;\n};\ndialect: \"pg\";\n}>;\nguild_settings: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgTableWithColumns",
-              "canonicalReference": "drizzle-orm!PgTableWithColumns:type"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"guild_settings\";\nschema: undefined;\ncolumns: {\nguild_id: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"guild_id\";\ntableName: \"guild_settings\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\npersonality: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"personality\";\ntableName: \"guild_settings\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: false;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nusingPermissions: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"usingPermissions\";\ntableName: \"guild_settings\";\ndataType: \"boolean\";\ncolumnType: \"PgBoolean\";\ndata: boolean;\ndriverParam: boolean;\nnotNull: false;\nhasDefault: true;\nenumValues: undefined;\nbaseColumn: never;\n}, {}, {}>;\nname: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"name\";\ntableName: \"guild_settings\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: false;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\n};\ndialect: \"pg\";\n}>;\nuploaded_images: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgTableWithColumns",
-              "canonicalReference": "drizzle-orm!PgTableWithColumns:type"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"uploaded_images\";\nschema: undefined;\ncolumns: {\nimage_id: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"image_id\";\ntableName: \"uploaded_images\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nuser: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"user\";\ntableName: \"uploaded_images\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nimage_url: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"image_url\";\ntableName: \"uploaded_images\";\ndataType: \"string\";\ncolumnType: \"PgText\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nimage_name: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"image_name\";\ntableName: \"uploaded_images\";\ndataType: \"string\";\ncolumnType: \"PgText\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\ntimestamp: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"timestamp\";\ntableName: \"uploaded_images\";\ndataType: \"date\";\ncolumnType: \"PgTimestamp\";\ndata: "
-            },
-            {
-              "kind": "Reference",
-              "text": "Date",
-              "canonicalReference": "!Date:interface"
-            },
-            {
-              "kind": "Content",
-              "text": ";\ndriverParam: string;\nnotNull: true;\nhasDefault: true;\nenumValues: undefined;\nbaseColumn: never;\n}, {}, {}>;\n};\ndialect: \"pg\";\n}>;\nuserInformations: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgTableWithColumns",
-              "canonicalReference": "drizzle-orm!PgTableWithColumns:type"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"user_informations\";\nschema: undefined;\ncolumns: {\nid: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"id\";\ntableName: \"user_informations\";\ndataType: \"number\";\ncolumnType: \"PgSerial\";\ndata: number;\ndriverParam: number;\nnotNull: true;\nhasDefault: true;\nenumValues: undefined;\nbaseColumn: never;\n}, {}, {}>;\nuser: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"user\";\ntableName: \"user_informations\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nguild: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"guild\";\ntableName: \"user_informations\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\ninformation: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"information\";\ntableName: \"user_informations\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\ntimestamp: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"timestamp\";\ntableName: \"user_informations\";\ndataType: \"date\";\ncolumnType: \"PgTimestamp\";\ndata: "
-            },
-            {
-              "kind": "Reference",
-              "text": "Date",
-              "canonicalReference": "!Date:interface"
-            },
-            {
-              "kind": "Content",
-              "text": ";\ndriverParam: string;\nnotNull: true;\nhasDefault: true;\nenumValues: undefined;\nbaseColumn: never;\n}, {}, {}>;\n};\ndialect: \"pg\";\n}>;\nimageGenerationRelations: "
-            },
-            {
-              "kind": "Reference",
-              "text": "Relations",
-              "canonicalReference": "drizzle-orm!Relations:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<\"image_generations\", {\ngeneration_results: "
-            },
-            {
-              "kind": "Reference",
-              "text": "Many",
-              "canonicalReference": "drizzle-orm!Many:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<\"image_generation_results\">;\n}>;\nimageGenerationResultsRelations: "
-            },
-            {
-              "kind": "Reference",
-              "text": "Relations",
-              "canonicalReference": "drizzle-orm!Relations:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<\"image_generation_results\", {\nimage_generation: "
-            },
-            {
-              "kind": "Reference",
-              "text": "One",
-              "canonicalReference": "drizzle-orm!One:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<\"image_generations\", true>;\n}>;\npermissions: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgTableWithColumns",
-              "canonicalReference": "drizzle-orm!PgTableWithColumns:type"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"permissions\";\nschema: undefined;\ncolumns: {\nguild_id: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"guild_id\";\ntableName: \"permissions\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: false;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nrole: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"role\";\ntableName: \"permissions\";\ndataType: \"string\";\ncolumnType: \"PgEnumColumn\";\ndata: \"admin\" | \"manager\" | \"normal\";\ndriverParam: string;\nnotNull: false;\nhasDefault: false;\nenumValues: [\"admin\", \"manager\", \"normal\"];\nbaseColumn: never;\n}, {}, {}>;\ngroup_id: "
-            },
-            {
-              "kind": "Reference",
-              "text": "PgColumn",
-              "canonicalReference": "drizzle-orm!PgColumn:class"
-            },
-            {
-              "kind": "Content",
-              "text": "<    {\nname: \"group_id\";\ntableName: \"permissions\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: false;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\n};\ndialect: \"pg\";\n}>;\n}>"
-            }
-          ],
-          "fileUrlPath": "src/kyxbot-database.ts",
-          "isReadonly": true,
-          "releaseTag": "Public",
-          "name": "db",
-          "variableTypeTokenRange": {
-            "startIndex": 1,
-            "endIndex": 105
-          }
-        },
-        {
           "kind": "TypeAlias",
           "canonicalReference": "kyxbot-database!DiscordId:type",
           "docComment": "",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export declare type DiscordId = "
+              "text": "export type DiscordId = "
             },
             {
               "kind": "Reference",
@@ -1015,7 +500,7 @@
               "text": ";"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/schema/usersSchema.ts",
           "releaseTag": "Public",
           "name": "DiscordId",
           "typeTokenRange": {
@@ -1055,7 +540,7 @@
               "text": "<boolean>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/permissionsApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "findPermission",
@@ -1096,7 +581,7 @@
               "text": "<number>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/generationResultsApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "getAmountOfPagesForUser",
@@ -1146,7 +631,7 @@
               "text": ";\n    generation_results: {\n        image_url: string;\n    }[];\n}[]>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/generationResultsApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "getGenerationResultsFromUser",
@@ -1196,7 +681,7 @@
               "text": ";\n    generation_results: {\n        image_url: string;\n    }[];\n}[]>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/generationResultsApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "getGenerationResultsFromUserPaginated",
@@ -1255,7 +740,7 @@
               "text": ";\n    generation_results: {\n        image_url: string;\n    }[];\n}[]>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/generationResultsApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "getGenerationResultsFromUserWithinGuild",
@@ -1296,7 +781,7 @@
               "text": "<{\n    name: string | null;\n    guild_id: string;\n    personality: string | null;\n    usingPermissions: boolean | null;\n} | null>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/guildSettingsApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "getGuildSettings",
@@ -1337,7 +822,7 @@
               "text": "<{\n    guild_id: string | null;\n    role: \"admin\" | \"manager\" | \"normal\" | null;\n    group_id: string | null;\n}[] | null>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/permissionsApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "getModRoles",
@@ -1369,7 +854,7 @@
               "text": "<{\n    guild_id: string | null;\n    role: \"admin\" | \"manager\" | \"normal\" | null;\n    group_id: string | null;\n} | null>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/permissionsApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "getPermissionsForGuildAndGroup",
@@ -1407,7 +892,7 @@
             },
             {
               "kind": "Content",
-              "text": "<{\n    user: string;\n    timestamp: "
+              "text": "<{\n    image_id: string;\n    user: string;\n    timestamp: "
             },
             {
               "kind": "Reference",
@@ -1416,10 +901,10 @@
             },
             {
               "kind": "Content",
-              "text": ";\n    image_id: string;\n    image_url: string;\n    image_name: string;\n} | undefined>"
+              "text": ";\n    image_url: string;\n    image_name: string;\n} | undefined>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/uploadImageApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "getUploadedImageByName",
@@ -1457,7 +942,7 @@
             },
             {
               "kind": "Content",
-              "text": "<{\n    user: string;\n    timestamp: "
+              "text": "<{\n    image_id: string;\n    user: string;\n    timestamp: "
             },
             {
               "kind": "Reference",
@@ -1466,10 +951,10 @@
             },
             {
               "kind": "Content",
-              "text": ";\n    image_id: string;\n    image_url: string;\n    image_name: string;\n}[]>"
+              "text": ";\n    image_url: string;\n    image_name: string;\n}[]>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/uploadImageApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "getUploadedImages",
@@ -1519,7 +1004,7 @@
               "text": ";\n    image_url: string;\n    variation_id: string;\n    upscaled_by: string;\n    original_image: string;\n} | null>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/upscaleImageApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "getUpscaledImage",
@@ -1569,7 +1054,7 @@
               "text": " | null>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/usersApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "getUserByDiscordId",
@@ -1619,7 +1104,7 @@
               "text": ";\n    id: number;\n    information: string;\n}[]>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/userInformationApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "getUserInformation",
@@ -1678,7 +1163,7 @@
               "text": ";\n    id: number;\n    information: string;\n}[]>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/userInformationApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "getUserInformationInGuild",
@@ -1710,7 +1195,7 @@
               "text": "<\"manager\" | \"normal\" | \"none\">"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/permissionsApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "getUserPrivileges",
@@ -1751,7 +1236,7 @@
               "text": "<{\n    guild_id: string | null;\n    role: \"admin\" | \"manager\" | \"normal\" | null;\n    group_id: string | null;\n}[] | null>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/permissionsApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "getUserRoles",
@@ -1767,7 +1252,7 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export declare type GuildId = "
+              "text": "export type GuildId = "
             },
             {
               "kind": "Reference",
@@ -1792,7 +1277,7 @@
               "text": ";"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/schema/guildSettingsSchema.ts",
           "releaseTag": "Public",
           "name": "GuildId",
           "typeTokenRange": {
@@ -1823,7 +1308,7 @@
               "text": "<boolean>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/permissionsApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "hasAccess",
@@ -1839,7 +1324,7 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export declare type ImageGenerationId = "
+              "text": "export type ImageGenerationId = "
             },
             {
               "kind": "Reference",
@@ -1864,7 +1349,7 @@
               "text": ";"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/schema/imageGenerationsSchema.ts",
           "releaseTag": "Public",
           "name": "ImageGenerationId",
           "typeTokenRange": {
@@ -1879,7 +1364,7 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export declare type ImageGenerationResultId = "
+              "text": "export type ImageGenerationResultId = "
             },
             {
               "kind": "Reference",
@@ -1904,7 +1389,7 @@
               "text": ";"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/schema/imageGenerationsResultsSchema.ts",
           "releaseTag": "Public",
           "name": "ImageGenerationResultId",
           "typeTokenRange": {
@@ -1944,7 +1429,7 @@
               "text": "<void>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/uploadImageApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "insertUploadedImage",
@@ -1994,7 +1479,7 @@
               "text": ";\n    id: number;\n    information: string;\n}>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/userInformationApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "insertUserInformation",
@@ -2010,7 +1495,7 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export declare type NewGuildSettings = "
+              "text": "export type NewGuildSettings = "
             },
             {
               "kind": "Reference",
@@ -2035,7 +1520,7 @@
               "text": ";"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/schema/guildSettingsSchema.ts",
           "releaseTag": "Public",
           "name": "NewGuildSettings",
           "typeTokenRange": {
@@ -2050,7 +1535,7 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export declare type NewImageGeneration = "
+              "text": "export type NewImageGeneration = "
             },
             {
               "kind": "Reference",
@@ -2075,7 +1560,7 @@
               "text": ";"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/schema/imageGenerationsSchema.ts",
           "releaseTag": "Public",
           "name": "NewImageGeneration",
           "typeTokenRange": {
@@ -2090,7 +1575,7 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export declare type NewImageGenerationResult = "
+              "text": "export type NewImageGenerationResult = "
             },
             {
               "kind": "Reference",
@@ -2115,7 +1600,7 @@
               "text": ";"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/schema/imageGenerationsResultsSchema.ts",
           "releaseTag": "Public",
           "name": "NewImageGenerationResult",
           "typeTokenRange": {
@@ -2130,11 +1615,11 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export declare type NewPermission = "
+              "text": "export type NewPermission = "
             },
             {
               "kind": "Reference",
-              "text": "Zod_2.infer",
+              "text": "Zod.infer",
               "canonicalReference": "zod!TypeOf:type"
             },
             {
@@ -2155,7 +1640,7 @@
               "text": ";"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/schema/permissionsSchema.ts",
           "releaseTag": "Public",
           "name": "NewPermission",
           "typeTokenRange": {
@@ -2170,7 +1655,7 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export declare type NewUploadedImage = "
+              "text": "export type NewUploadedImage = "
             },
             {
               "kind": "Reference",
@@ -2195,7 +1680,7 @@
               "text": ";"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/schema/uploadedImageSchema.ts",
           "releaseTag": "Public",
           "name": "NewUploadedImage",
           "typeTokenRange": {
@@ -2210,7 +1695,7 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export declare type NewUpscaledImage = "
+              "text": "export type NewUpscaledImage = "
             },
             {
               "kind": "Reference",
@@ -2235,7 +1720,7 @@
               "text": ";"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/schema/upscaledImagesSchema.ts",
           "releaseTag": "Public",
           "name": "NewUpscaledImage",
           "typeTokenRange": {
@@ -2250,7 +1735,7 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export declare type NewUserInformation = "
+              "text": "export type NewUserInformation = "
             },
             {
               "kind": "Reference",
@@ -2275,7 +1760,7 @@
               "text": ";"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/schema/userInformations.ts",
           "releaseTag": "Public",
           "name": "NewUserInformation",
           "typeTokenRange": {
@@ -2290,11 +1775,11 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export declare type Permission = "
+              "text": "export type Permission = "
             },
             {
               "kind": "Reference",
-              "text": "Zod_2.infer",
+              "text": "Zod.infer",
               "canonicalReference": "zod!TypeOf:type"
             },
             {
@@ -2315,7 +1800,7 @@
               "text": ";"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/schema/permissionsSchema.ts",
           "releaseTag": "Public",
           "name": "Permission",
           "typeTokenRange": {
@@ -2355,7 +1840,7 @@
               "text": "<void>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/permissionsApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "removeModRole",
@@ -2396,7 +1881,7 @@
               "text": "<void>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/permissionsApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "removeUserRole",
@@ -2428,7 +1913,7 @@
               "text": "<void>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/permissionsApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "resetPermissions",
@@ -2444,11 +1929,11 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export declare type Role = "
+              "text": "export type Role = "
             },
             {
               "kind": "Reference",
-              "text": "Zod_2.infer",
+              "text": "Zod.infer",
               "canonicalReference": "zod!TypeOf:type"
             },
             {
@@ -2469,7 +1954,7 @@
               "text": ";"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/schema/permissionsSchema.ts",
           "releaseTag": "Public",
           "name": "Role",
           "typeTokenRange": {
@@ -2509,7 +1994,7 @@
               "text": "<void>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/permissionsApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "setModRole",
@@ -2559,7 +2044,7 @@
               "text": "<void>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/generationsApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "updateGenerationStatus",
@@ -2618,7 +2103,7 @@
               "text": "<void>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/guildSettingsApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "updateGuildSettings",
@@ -2634,7 +2119,7 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export declare type UploadedImage = "
+              "text": "export type UploadedImage = "
             },
             {
               "kind": "Reference",
@@ -2659,7 +2144,7 @@
               "text": ";"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/schema/uploadedImageSchema.ts",
           "releaseTag": "Public",
           "name": "UploadedImage",
           "typeTokenRange": {
@@ -2674,7 +2159,7 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export declare type UploadedImageId = "
+              "text": "export type UploadedImageId = "
             },
             {
               "kind": "Reference",
@@ -2699,7 +2184,7 @@
               "text": ";"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/schema/uploadedImageSchema.ts",
           "releaseTag": "Public",
           "name": "UploadedImageId",
           "typeTokenRange": {
@@ -2714,7 +2199,7 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export declare type UpscaledImageId = "
+              "text": "export type UpscaledImageId = "
             },
             {
               "kind": "Reference",
@@ -2739,7 +2224,7 @@
               "text": ";"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/schema/upscaledImagesSchema.ts",
           "releaseTag": "Public",
           "name": "UpscaledImageId",
           "typeTokenRange": {
@@ -2788,7 +2273,7 @@
               "text": "<void>"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/api/guildSettingsApi.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "upsertGuildSettings",
@@ -2804,7 +2289,7 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export declare type User = "
+              "text": "export type User = "
             },
             {
               "kind": "Reference",
@@ -2829,7 +2314,7 @@
               "text": ";"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/schema/usersSchema.ts",
           "releaseTag": "Public",
           "name": "User",
           "typeTokenRange": {
@@ -2844,7 +2329,7 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export declare type UserInformation = "
+              "text": "export type UserInformation = "
             },
             {
               "kind": "Reference",
@@ -2869,7 +2354,7 @@
               "text": ";"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/schema/userInformations.ts",
           "releaseTag": "Public",
           "name": "UserInformation",
           "typeTokenRange": {
@@ -2884,7 +2369,7 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export declare type UserInformationId = "
+              "text": "export type UserInformationId = "
             },
             {
               "kind": "Reference",
@@ -2909,7 +2394,7 @@
               "text": ";"
             }
           ],
-          "fileUrlPath": "src/kyxbot-database.ts",
+          "fileUrlPath": "src/schema/userInformations.ts",
           "releaseTag": "Public",
           "name": "UserInformationId",
           "typeTokenRange": {

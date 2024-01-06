@@ -4,16 +4,9 @@
 
 ```ts
 
-import { default as default_2 } from 'zod';
-import { Many } from 'drizzle-orm';
-import { One } from 'drizzle-orm';
-import { PgColumn } from 'drizzle-orm/pg-core';
-import { PgTableWithColumns } from 'drizzle-orm/pg-core';
-import postgres from 'postgres';
-import { PostgresJsDatabase } from 'drizzle-orm/postgres-js';
-import { Relations } from 'drizzle-orm';
 import { UnknownKeysParam } from 'zod';
 import { z } from 'zod';
+import { default as Zod_2 } from 'zod';
 import { ZodBoolean } from 'zod';
 import { ZodDate } from 'zod';
 import { ZodNullable } from 'zod';
@@ -33,9 +26,6 @@ export const addGenerationResults: (generationResults: NewImageGenerationResult[
 export const addUserRole: (guildId: GuildId, roleId: string) => Promise<void>;
 
 // @public (undocumented)
-export const client: postgres.Sql<{}>;
-
-// @public (undocumented)
 export const createGuildSettings: (guildSettings: NewGuildSettings) => Promise<void>;
 
 // @public (undocumented)
@@ -46,492 +36,6 @@ export const createPermissions: (newPermission: NewPermission) => Promise<void>;
 
 // @public (undocumented)
 export const createUpscaledImage: (upscaledImage: NewUpscaledImage) => Promise<void>;
-
-// @public (undocumented)
-export const db: PostgresJsDatabase<    {
-    users: PgTableWithColumns<    {
-        name: "users";
-        schema: undefined;
-        columns: {
-            discordId: PgColumn<    {
-                name: "discord_id";
-                tableName: "users";
-                dataType: "string";
-                columnType: "PgVarchar";
-                data: string;
-                driverParam: string;
-                notNull: true;
-                hasDefault: false;
-                enumValues: [string, ...string[]];
-                baseColumn: never;
-            }, {}, {}>;
-            money: PgColumn<    {
-                name: "money";
-                tableName: "users";
-                dataType: "number";
-                columnType: "PgInteger";
-                data: number;
-                driverParam: string | number;
-                notNull: true;
-                hasDefault: true;
-                enumValues: undefined;
-                baseColumn: never;
-            }, {}, {}>;
-        };
-        dialect: "pg";
-    }>;
-    image_generations: PgTableWithColumns<    {
-        name: "image_generations";
-        schema: undefined;
-        columns: {
-            generation_id: PgColumn<    {
-                name: "generation_id";
-                tableName: "image_generations";
-                dataType: "string";
-                columnType: "PgVarchar";
-                data: string;
-                driverParam: string;
-                notNull: true;
-                hasDefault: false;
-                enumValues: [string, ...string[]];
-                baseColumn: never;
-            }, {}, {}>;
-            user: PgColumn<    {
-                name: "user";
-                tableName: "image_generations";
-                dataType: "string";
-                columnType: "PgVarchar";
-                data: string;
-                driverParam: string;
-                notNull: true;
-                hasDefault: false;
-                enumValues: [string, ...string[]];
-                baseColumn: never;
-            }, {}, {}>;
-            guild: PgColumn<    {
-                name: "guild";
-                tableName: "image_generations";
-                dataType: "string";
-                columnType: "PgVarchar";
-                data: string;
-                driverParam: string;
-                notNull: true;
-                hasDefault: false;
-                enumValues: [string, ...string[]];
-                baseColumn: never;
-            }, {}, {}>;
-            prompt: PgColumn<    {
-                name: "prompt";
-                tableName: "image_generations";
-                dataType: "string";
-                columnType: "PgText";
-                data: string;
-                driverParam: string;
-                notNull: true;
-                hasDefault: false;
-                enumValues: [string, ...string[]];
-                baseColumn: never;
-            }, {}, {}>;
-            interactionId: PgColumn<    {
-                name: "message_id";
-                tableName: "image_generations";
-                dataType: "string";
-                columnType: "PgVarchar";
-                data: string;
-                driverParam: string;
-                notNull: true;
-                hasDefault: false;
-                enumValues: [string, ...string[]];
-                baseColumn: never;
-            }, {}, {}>;
-            status: PgColumn<    {
-                name: "status";
-                tableName: "image_generations";
-                dataType: "string";
-                columnType: "PgVarchar";
-                data: string;
-                driverParam: string;
-                notNull: true;
-                hasDefault: false;
-                enumValues: [string, ...string[]];
-                baseColumn: never;
-            }, {}, {}>;
-            timestamp: PgColumn<    {
-                name: "timestamp";
-                tableName: "image_generations";
-                dataType: "date";
-                columnType: "PgTimestamp";
-                data: Date;
-                driverParam: string;
-                notNull: true;
-                hasDefault: true;
-                enumValues: undefined;
-                baseColumn: never;
-            }, {}, {}>;
-        };
-        dialect: "pg";
-    }>;
-    image_generation_results: PgTableWithColumns<    {
-        name: "image_generation_results";
-        schema: undefined;
-        columns: {
-            image_id: PgColumn<    {
-                name: "image_id";
-                tableName: "image_generation_results";
-                dataType: "string";
-                columnType: "PgVarchar";
-                data: string;
-                driverParam: string;
-                notNull: true;
-                hasDefault: false;
-                enumValues: [string, ...string[]];
-                baseColumn: never;
-            }, {}, {}>;
-            generation_id: PgColumn<    {
-                name: "generation_id";
-                tableName: "image_generation_results";
-                dataType: "string";
-                columnType: "PgVarchar";
-                data: string;
-                driverParam: string;
-                notNull: true;
-                hasDefault: false;
-                enumValues: [string, ...string[]];
-                baseColumn: never;
-            }, {}, {}>;
-            image_url: PgColumn<    {
-                name: "image_url";
-                tableName: "image_generation_results";
-                dataType: "string";
-                columnType: "PgText";
-                data: string;
-                driverParam: string;
-                notNull: true;
-                hasDefault: false;
-                enumValues: [string, ...string[]];
-                baseColumn: never;
-            }, {}, {}>;
-            upscaled_image_url: PgColumn<    {
-                name: "upscaled_image_url";
-                tableName: "image_generation_results";
-                dataType: "string";
-                columnType: "PgText";
-                data: string;
-                driverParam: string;
-                notNull: false;
-                hasDefault: false;
-                enumValues: [string, ...string[]];
-                baseColumn: never;
-            }, {}, {}>;
-        };
-        dialect: "pg";
-    }>;
-    upscaled_images: PgTableWithColumns<    {
-        name: "upscaled_images";
-        schema: undefined;
-        columns: {
-            variation_id: PgColumn<    {
-                name: "variation_id";
-                tableName: "upscaled_images";
-                dataType: "string";
-                columnType: "PgVarchar";
-                data: string;
-                driverParam: string;
-                notNull: true;
-                hasDefault: false;
-                enumValues: [string, ...string[]];
-                baseColumn: never;
-            }, {}, {}>;
-            upscaled_by: PgColumn<    {
-                name: "upscaled_by";
-                tableName: "upscaled_images";
-                dataType: "string";
-                columnType: "PgVarchar";
-                data: string;
-                driverParam: string;
-                notNull: true;
-                hasDefault: false;
-                enumValues: [string, ...string[]];
-                baseColumn: never;
-            }, {}, {}>;
-            image_url: PgColumn<    {
-                name: "image_url";
-                tableName: "upscaled_images";
-                dataType: "string";
-                columnType: "PgVarchar";
-                data: string;
-                driverParam: string;
-                notNull: true;
-                hasDefault: false;
-                enumValues: [string, ...string[]];
-                baseColumn: never;
-            }, {}, {}>;
-            original_image: PgColumn<    {
-                name: "original_image";
-                tableName: "upscaled_images";
-                dataType: "string";
-                columnType: "PgVarchar";
-                data: string;
-                driverParam: string;
-                notNull: true;
-                hasDefault: false;
-                enumValues: [string, ...string[]];
-                baseColumn: never;
-            }, {}, {}>;
-            timestamp: PgColumn<    {
-                name: "timestamp";
-                tableName: "upscaled_images";
-                dataType: "date";
-                columnType: "PgTimestamp";
-                data: Date;
-                driverParam: string;
-                notNull: true;
-                hasDefault: true;
-                enumValues: undefined;
-                baseColumn: never;
-            }, {}, {}>;
-        };
-        dialect: "pg";
-    }>;
-    guild_settings: PgTableWithColumns<    {
-        name: "guild_settings";
-        schema: undefined;
-        columns: {
-            guild_id: PgColumn<    {
-                name: "guild_id";
-                tableName: "guild_settings";
-                dataType: "string";
-                columnType: "PgVarchar";
-                data: string;
-                driverParam: string;
-                notNull: true;
-                hasDefault: false;
-                enumValues: [string, ...string[]];
-                baseColumn: never;
-            }, {}, {}>;
-            personality: PgColumn<    {
-                name: "personality";
-                tableName: "guild_settings";
-                dataType: "string";
-                columnType: "PgVarchar";
-                data: string;
-                driverParam: string;
-                notNull: false;
-                hasDefault: false;
-                enumValues: [string, ...string[]];
-                baseColumn: never;
-            }, {}, {}>;
-            usingPermissions: PgColumn<    {
-                name: "usingPermissions";
-                tableName: "guild_settings";
-                dataType: "boolean";
-                columnType: "PgBoolean";
-                data: boolean;
-                driverParam: boolean;
-                notNull: false;
-                hasDefault: true;
-                enumValues: undefined;
-                baseColumn: never;
-            }, {}, {}>;
-            name: PgColumn<    {
-                name: "name";
-                tableName: "guild_settings";
-                dataType: "string";
-                columnType: "PgVarchar";
-                data: string;
-                driverParam: string;
-                notNull: false;
-                hasDefault: false;
-                enumValues: [string, ...string[]];
-                baseColumn: never;
-            }, {}, {}>;
-        };
-        dialect: "pg";
-    }>;
-    uploaded_images: PgTableWithColumns<    {
-        name: "uploaded_images";
-        schema: undefined;
-        columns: {
-            image_id: PgColumn<    {
-                name: "image_id";
-                tableName: "uploaded_images";
-                dataType: "string";
-                columnType: "PgVarchar";
-                data: string;
-                driverParam: string;
-                notNull: true;
-                hasDefault: false;
-                enumValues: [string, ...string[]];
-                baseColumn: never;
-            }, {}, {}>;
-            user: PgColumn<    {
-                name: "user";
-                tableName: "uploaded_images";
-                dataType: "string";
-                columnType: "PgVarchar";
-                data: string;
-                driverParam: string;
-                notNull: true;
-                hasDefault: false;
-                enumValues: [string, ...string[]];
-                baseColumn: never;
-            }, {}, {}>;
-            image_url: PgColumn<    {
-                name: "image_url";
-                tableName: "uploaded_images";
-                dataType: "string";
-                columnType: "PgText";
-                data: string;
-                driverParam: string;
-                notNull: true;
-                hasDefault: false;
-                enumValues: [string, ...string[]];
-                baseColumn: never;
-            }, {}, {}>;
-            image_name: PgColumn<    {
-                name: "image_name";
-                tableName: "uploaded_images";
-                dataType: "string";
-                columnType: "PgText";
-                data: string;
-                driverParam: string;
-                notNull: true;
-                hasDefault: false;
-                enumValues: [string, ...string[]];
-                baseColumn: never;
-            }, {}, {}>;
-            timestamp: PgColumn<    {
-                name: "timestamp";
-                tableName: "uploaded_images";
-                dataType: "date";
-                columnType: "PgTimestamp";
-                data: Date;
-                driverParam: string;
-                notNull: true;
-                hasDefault: true;
-                enumValues: undefined;
-                baseColumn: never;
-            }, {}, {}>;
-        };
-        dialect: "pg";
-    }>;
-    userInformations: PgTableWithColumns<    {
-        name: "user_informations";
-        schema: undefined;
-        columns: {
-            id: PgColumn<    {
-                name: "id";
-                tableName: "user_informations";
-                dataType: "number";
-                columnType: "PgSerial";
-                data: number;
-                driverParam: number;
-                notNull: true;
-                hasDefault: true;
-                enumValues: undefined;
-                baseColumn: never;
-            }, {}, {}>;
-            user: PgColumn<    {
-                name: "user";
-                tableName: "user_informations";
-                dataType: "string";
-                columnType: "PgVarchar";
-                data: string;
-                driverParam: string;
-                notNull: true;
-                hasDefault: false;
-                enumValues: [string, ...string[]];
-                baseColumn: never;
-            }, {}, {}>;
-            guild: PgColumn<    {
-                name: "guild";
-                tableName: "user_informations";
-                dataType: "string";
-                columnType: "PgVarchar";
-                data: string;
-                driverParam: string;
-                notNull: true;
-                hasDefault: false;
-                enumValues: [string, ...string[]];
-                baseColumn: never;
-            }, {}, {}>;
-            information: PgColumn<    {
-                name: "information";
-                tableName: "user_informations";
-                dataType: "string";
-                columnType: "PgVarchar";
-                data: string;
-                driverParam: string;
-                notNull: true;
-                hasDefault: false;
-                enumValues: [string, ...string[]];
-                baseColumn: never;
-            }, {}, {}>;
-            timestamp: PgColumn<    {
-                name: "timestamp";
-                tableName: "user_informations";
-                dataType: "date";
-                columnType: "PgTimestamp";
-                data: Date;
-                driverParam: string;
-                notNull: true;
-                hasDefault: true;
-                enumValues: undefined;
-                baseColumn: never;
-            }, {}, {}>;
-        };
-        dialect: "pg";
-    }>;
-    imageGenerationRelations: Relations<"image_generations", {
-        generation_results: Many<"image_generation_results">;
-    }>;
-    imageGenerationResultsRelations: Relations<"image_generation_results", {
-        image_generation: One<"image_generations", true>;
-    }>;
-    permissions: PgTableWithColumns<    {
-        name: "permissions";
-        schema: undefined;
-        columns: {
-            guild_id: PgColumn<    {
-                name: "guild_id";
-                tableName: "permissions";
-                dataType: "string";
-                columnType: "PgVarchar";
-                data: string;
-                driverParam: string;
-                notNull: false;
-                hasDefault: false;
-                enumValues: [string, ...string[]];
-                baseColumn: never;
-            }, {}, {}>;
-            role: PgColumn<    {
-                name: "role";
-                tableName: "permissions";
-                dataType: "string";
-                columnType: "PgEnumColumn";
-                data: "admin" | "manager" | "normal";
-                driverParam: string;
-                notNull: false;
-                hasDefault: false;
-                enumValues: ["admin", "manager", "normal"];
-                baseColumn: never;
-            }, {}, {}>;
-            group_id: PgColumn<    {
-                name: "group_id";
-                tableName: "permissions";
-                dataType: "string";
-                columnType: "PgVarchar";
-                data: string;
-                driverParam: string;
-                notNull: false;
-                hasDefault: false;
-                enumValues: [string, ...string[]];
-                baseColumn: never;
-            }, {}, {}>;
-        };
-        dialect: "pg";
-    }>;
-}>;
 
 // Warning: (ae-forgotten-export) The symbol "discordIdSchema" needs to be exported by the entry point kyxbot-database.d.ts
 //
@@ -595,18 +99,18 @@ export const getPermissionsForGuildAndGroup: (guildId: string, groupId: string) 
 
 // @public (undocumented)
 export const getUploadedImageByName: (userId: DiscordId, name: string) => Promise<{
+    image_id: string;
     user: string;
     timestamp: Date;
-    image_id: string;
     image_url: string;
     image_name: string;
 } | undefined>;
 
 // @public (undocumented)
 export const getUploadedImages: (userId: DiscordId) => Promise<{
+    image_id: string;
     user: string;
     timestamp: Date;
-    image_id: string;
     image_url: string;
     image_name: string;
 }[]>;
@@ -697,7 +201,7 @@ export type NewImageGenerationResult = Zod.infer<typeof insertImageGenerationRes
 // Warning: (ae-forgotten-export) The symbol "insertPermissionsSchema" needs to be exported by the entry point kyxbot-database.d.ts
 //
 // @public (undocumented)
-export type NewPermission = default_2.infer<typeof insertPermissionsSchema>;
+export type NewPermission = Zod_2.infer<typeof insertPermissionsSchema>;
 
 // Warning: (ae-forgotten-export) The symbol "insertUploadedImageSchema" needs to be exported by the entry point kyxbot-database.d.ts
 //
@@ -717,7 +221,7 @@ export type NewUserInformation = Zod.infer<typeof insertUserInformationSchema>;
 // Warning: (ae-forgotten-export) The symbol "selectPermissionsSchema" needs to be exported by the entry point kyxbot-database.d.ts
 //
 // @public (undocumented)
-export type Permission = default_2.infer<typeof selectPermissionsSchema>;
+export type Permission = Zod_2.infer<typeof selectPermissionsSchema>;
 
 // @public (undocumented)
 export const removeModRole: (guildId: GuildId) => Promise<void>;
@@ -731,7 +235,7 @@ export const resetPermissions: (guildId: string, modGroups: string[], userGroups
 // Warning: (ae-forgotten-export) The symbol "roleSchema" needs to be exported by the entry point kyxbot-database.d.ts
 //
 // @public (undocumented)
-export type Role = default_2.infer<typeof roleSchema>;
+export type Role = Zod_2.infer<typeof roleSchema>;
 
 // @public (undocumented)
 export const setModRole: (guildId: GuildId, roleId: string) => Promise<void>;
