@@ -33,3 +33,4 @@ declare const uploadImageApi: {
     } | undefined>;
 };
 export default uploadImageApi;
+//# sourceMappingURL=uploadImageApi.d.ts.map

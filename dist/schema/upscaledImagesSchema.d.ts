@@ -103,3 +103,4 @@ export declare const selectUpscaledImageSchema: import("zod").ZodObject<{
 }>;
 export type NewUpscaledImage = Zod.infer<typeof insertUpscaledImageSchema>;
 export type UpscaledImageId = Zod.infer<typeof selectUpscaledImageSchema>["variation_id"];
+//# sourceMappingURL=upscaledImagesSchema.d.ts.map

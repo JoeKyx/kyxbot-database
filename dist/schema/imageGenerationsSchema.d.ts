@@ -143,3 +143,4 @@ export type ImageGenerationId = Zod.infer<typeof selectImageGenerationSchema>["g
 export declare const imageGenerationRelations: import("drizzle-orm").Relations<"image_generations", {
     generation_results: import("drizzle-orm").Many<"image_generation_results">;
 }>;
+//# sourceMappingURL=imageGenerationsSchema.d.ts.map

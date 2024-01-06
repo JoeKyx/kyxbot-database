@@ -104,3 +104,4 @@ export declare const insertUploadedImageSchema: import("zod").ZodObject<Omit<{
 export type NewUploadedImage = Zod.infer<typeof insertUploadedImageSchema>;
 export type UploadedImageId = Zod.infer<typeof selectUploadedImageSchema>["image_id"];
 export type UploadedImage = Zod.infer<typeof selectUploadedImageSchema>;
+//# sourceMappingURL=uploadedImageSchema.d.ts.map

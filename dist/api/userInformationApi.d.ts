@@ -46,3 +46,4 @@ declare const userInformationApi: {
     }[]>;
 };
 export default userInformationApi;
+//# sourceMappingURL=userInformationApi.d.ts.map

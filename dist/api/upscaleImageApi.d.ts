@@ -19,3 +19,4 @@ declare const upscaleImageApi: {
     createUpscaledImage: (upscaledImage: NewUpscaledImage) => Promise<void>;
 };
 export default upscaleImageApi;
+//# sourceMappingURL=upscaleImageApi.d.ts.map

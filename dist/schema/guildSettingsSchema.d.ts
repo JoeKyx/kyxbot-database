@@ -87,3 +87,4 @@ export declare const selectGuildSettingsSchema: import("zod").ZodObject<{
 }>;
 export type NewGuildSettings = Zod.infer<typeof insertGuildSettingsSchema>;
 export type GuildId = Zod.infer<typeof selectGuildSettingsSchema>["guild_id"];
+//# sourceMappingURL=guildSettingsSchema.d.ts.map

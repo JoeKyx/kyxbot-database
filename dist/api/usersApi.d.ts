@@ -7,3 +7,4 @@ declare const usersApi: {
     createNewUser: (discordId: DiscordId) => Promise<User>;
 };
 export default usersApi;
+//# sourceMappingURL=usersApi.d.ts.map

@@ -1,0 +1,2923 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.39.1",
+    "schemaVersion": 1011,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "kyxbot-database!",
+  "docComment": "",
+  "name": "kyxbot-database",
+  "preserveMemberOrder": false,
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "kyxbot-database!",
+      "name": "",
+      "preserveMemberOrder": false,
+      "members": [
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!addGeneration:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "addGeneration: "
+            },
+            {
+              "kind": "Content",
+              "text": "(generation: "
+            },
+            {
+              "kind": "Reference",
+              "text": "NewImageGeneration",
+              "canonicalReference": "kyxbot-database!NewImageGeneration:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<void>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "addGeneration",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!addGenerationResults:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "addGenerationResults: "
+            },
+            {
+              "kind": "Content",
+              "text": "(generationResults: "
+            },
+            {
+              "kind": "Reference",
+              "text": "NewImageGenerationResult",
+              "canonicalReference": "kyxbot-database!NewImageGenerationResult:type"
+            },
+            {
+              "kind": "Content",
+              "text": "[]) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<void>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "addGenerationResults",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!addUserRole:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "addUserRole: "
+            },
+            {
+              "kind": "Content",
+              "text": "(guildId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "GuildId",
+              "canonicalReference": "kyxbot-database!GuildId:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", roleId: string) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<void>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "addUserRole",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!client:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "client: "
+            },
+            {
+              "kind": "Reference",
+              "text": "postgres.Sql",
+              "canonicalReference": "postgres!postgres.Sql:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<{}>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "client",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!createGuildSettings:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "createGuildSettings: "
+            },
+            {
+              "kind": "Content",
+              "text": "(guildSettings: "
+            },
+            {
+              "kind": "Reference",
+              "text": "NewGuildSettings",
+              "canonicalReference": "kyxbot-database!NewGuildSettings:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<void>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "createGuildSettings",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!createNewUser:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "createNewUser: "
+            },
+            {
+              "kind": "Content",
+              "text": "(discordId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "DiscordId",
+              "canonicalReference": "kyxbot-database!DiscordId:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "User",
+              "canonicalReference": "kyxbot-database!User:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "createNewUser",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 8
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!createPermissions:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "createPermissions: "
+            },
+            {
+              "kind": "Content",
+              "text": "(newPermission: "
+            },
+            {
+              "kind": "Reference",
+              "text": "NewPermission",
+              "canonicalReference": "kyxbot-database!NewPermission:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<void>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "createPermissions",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!createUpscaledImage:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "createUpscaledImage: "
+            },
+            {
+              "kind": "Content",
+              "text": "(upscaledImage: "
+            },
+            {
+              "kind": "Reference",
+              "text": "NewUpscaledImage",
+              "canonicalReference": "kyxbot-database!NewUpscaledImage:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<void>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "createUpscaledImage",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!db:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "db: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PostgresJsDatabase",
+              "canonicalReference": "drizzle-orm!PostgresJsDatabase:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nusers: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgTableWithColumns",
+              "canonicalReference": "drizzle-orm!PgTableWithColumns:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"users\";\nschema: undefined;\ncolumns: {\ndiscordId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"discord_id\";\ntableName: \"users\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nmoney: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"money\";\ntableName: \"users\";\ndataType: \"number\";\ncolumnType: \"PgInteger\";\ndata: number;\ndriverParam: string | number;\nnotNull: true;\nhasDefault: true;\nenumValues: undefined;\nbaseColumn: never;\n}, {}, {}>;\n};\ndialect: \"pg\";\n}>;\nimage_generations: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgTableWithColumns",
+              "canonicalReference": "drizzle-orm!PgTableWithColumns:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"image_generations\";\nschema: undefined;\ncolumns: {\ngeneration_id: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"generation_id\";\ntableName: \"image_generations\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nuser: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"user\";\ntableName: \"image_generations\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nguild: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"guild\";\ntableName: \"image_generations\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nprompt: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"prompt\";\ntableName: \"image_generations\";\ndataType: \"string\";\ncolumnType: \"PgText\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\ninteractionId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"message_id\";\ntableName: \"image_generations\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nstatus: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"status\";\ntableName: \"image_generations\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\ntimestamp: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"timestamp\";\ntableName: \"image_generations\";\ndataType: \"date\";\ncolumnType: \"PgTimestamp\";\ndata: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\ndriverParam: string;\nnotNull: true;\nhasDefault: true;\nenumValues: undefined;\nbaseColumn: never;\n}, {}, {}>;\n};\ndialect: \"pg\";\n}>;\nimage_generation_results: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgTableWithColumns",
+              "canonicalReference": "drizzle-orm!PgTableWithColumns:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"image_generation_results\";\nschema: undefined;\ncolumns: {\nimage_id: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"image_id\";\ntableName: \"image_generation_results\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\ngeneration_id: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"generation_id\";\ntableName: \"image_generation_results\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nimage_url: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"image_url\";\ntableName: \"image_generation_results\";\ndataType: \"string\";\ncolumnType: \"PgText\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nupscaled_image_url: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"upscaled_image_url\";\ntableName: \"image_generation_results\";\ndataType: \"string\";\ncolumnType: \"PgText\";\ndata: string;\ndriverParam: string;\nnotNull: false;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\n};\ndialect: \"pg\";\n}>;\nupscaled_images: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgTableWithColumns",
+              "canonicalReference": "drizzle-orm!PgTableWithColumns:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"upscaled_images\";\nschema: undefined;\ncolumns: {\nvariation_id: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"variation_id\";\ntableName: \"upscaled_images\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nupscaled_by: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"upscaled_by\";\ntableName: \"upscaled_images\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nimage_url: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"image_url\";\ntableName: \"upscaled_images\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\noriginal_image: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"original_image\";\ntableName: \"upscaled_images\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\ntimestamp: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"timestamp\";\ntableName: \"upscaled_images\";\ndataType: \"date\";\ncolumnType: \"PgTimestamp\";\ndata: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\ndriverParam: string;\nnotNull: true;\nhasDefault: true;\nenumValues: undefined;\nbaseColumn: never;\n}, {}, {}>;\n};\ndialect: \"pg\";\n}>;\nguild_settings: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgTableWithColumns",
+              "canonicalReference": "drizzle-orm!PgTableWithColumns:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"guild_settings\";\nschema: undefined;\ncolumns: {\nguild_id: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"guild_id\";\ntableName: \"guild_settings\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\npersonality: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"personality\";\ntableName: \"guild_settings\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: false;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nusingPermissions: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"usingPermissions\";\ntableName: \"guild_settings\";\ndataType: \"boolean\";\ncolumnType: \"PgBoolean\";\ndata: boolean;\ndriverParam: boolean;\nnotNull: false;\nhasDefault: true;\nenumValues: undefined;\nbaseColumn: never;\n}, {}, {}>;\nname: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"name\";\ntableName: \"guild_settings\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: false;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\n};\ndialect: \"pg\";\n}>;\nuploaded_images: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgTableWithColumns",
+              "canonicalReference": "drizzle-orm!PgTableWithColumns:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"uploaded_images\";\nschema: undefined;\ncolumns: {\nimage_id: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"image_id\";\ntableName: \"uploaded_images\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nuser: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"user\";\ntableName: \"uploaded_images\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nimage_url: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"image_url\";\ntableName: \"uploaded_images\";\ndataType: \"string\";\ncolumnType: \"PgText\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nimage_name: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"image_name\";\ntableName: \"uploaded_images\";\ndataType: \"string\";\ncolumnType: \"PgText\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\ntimestamp: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"timestamp\";\ntableName: \"uploaded_images\";\ndataType: \"date\";\ncolumnType: \"PgTimestamp\";\ndata: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\ndriverParam: string;\nnotNull: true;\nhasDefault: true;\nenumValues: undefined;\nbaseColumn: never;\n}, {}, {}>;\n};\ndialect: \"pg\";\n}>;\nuserInformations: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgTableWithColumns",
+              "canonicalReference": "drizzle-orm!PgTableWithColumns:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"user_informations\";\nschema: undefined;\ncolumns: {\nid: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"id\";\ntableName: \"user_informations\";\ndataType: \"number\";\ncolumnType: \"PgSerial\";\ndata: number;\ndriverParam: number;\nnotNull: true;\nhasDefault: true;\nenumValues: undefined;\nbaseColumn: never;\n}, {}, {}>;\nuser: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"user\";\ntableName: \"user_informations\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nguild: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"guild\";\ntableName: \"user_informations\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\ninformation: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"information\";\ntableName: \"user_informations\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: true;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\ntimestamp: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"timestamp\";\ntableName: \"user_informations\";\ndataType: \"date\";\ncolumnType: \"PgTimestamp\";\ndata: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\ndriverParam: string;\nnotNull: true;\nhasDefault: true;\nenumValues: undefined;\nbaseColumn: never;\n}, {}, {}>;\n};\ndialect: \"pg\";\n}>;\nimageGenerationRelations: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Relations",
+              "canonicalReference": "drizzle-orm!Relations:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<\"image_generations\", {\ngeneration_results: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Many",
+              "canonicalReference": "drizzle-orm!Many:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<\"image_generation_results\">;\n}>;\nimageGenerationResultsRelations: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Relations",
+              "canonicalReference": "drizzle-orm!Relations:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<\"image_generation_results\", {\nimage_generation: "
+            },
+            {
+              "kind": "Reference",
+              "text": "One",
+              "canonicalReference": "drizzle-orm!One:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<\"image_generations\", true>;\n}>;\npermissions: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgTableWithColumns",
+              "canonicalReference": "drizzle-orm!PgTableWithColumns:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"permissions\";\nschema: undefined;\ncolumns: {\nguild_id: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"guild_id\";\ntableName: \"permissions\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: false;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\nrole: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"role\";\ntableName: \"permissions\";\ndataType: \"string\";\ncolumnType: \"PgEnumColumn\";\ndata: \"admin\" | \"manager\" | \"normal\";\ndriverParam: string;\nnotNull: false;\nhasDefault: false;\nenumValues: [\"admin\", \"manager\", \"normal\"];\nbaseColumn: never;\n}, {}, {}>;\ngroup_id: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PgColumn",
+              "canonicalReference": "drizzle-orm!PgColumn:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<    {\nname: \"group_id\";\ntableName: \"permissions\";\ndataType: \"string\";\ncolumnType: \"PgVarchar\";\ndata: string;\ndriverParam: string;\nnotNull: false;\nhasDefault: false;\nenumValues: [string, ...string[]];\nbaseColumn: never;\n}, {}, {}>;\n};\ndialect: \"pg\";\n}>;\n}>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "db",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 105
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "kyxbot-database!DiscordId:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type DiscordId = "
+            },
+            {
+              "kind": "Reference",
+              "text": "z.infer",
+              "canonicalReference": "zod!TypeOf:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "discordIdSchema",
+              "canonicalReference": "kyxbot-database!~discordIdSchema:var"
+            },
+            {
+              "kind": "Content",
+              "text": ">[\"discordId\"]"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "releaseTag": "Public",
+          "name": "DiscordId",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!findPermission:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "findPermission: "
+            },
+            {
+              "kind": "Content",
+              "text": "(guildId: string, groupIds: string[], role: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Role",
+              "canonicalReference": "kyxbot-database!Role:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<boolean>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "findPermission",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!getAmountOfPagesForUser:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getAmountOfPagesForUser: "
+            },
+            {
+              "kind": "Content",
+              "text": "(discordId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "DiscordId",
+              "canonicalReference": "kyxbot-database!DiscordId:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", pageSize: number) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<number>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "getAmountOfPagesForUser",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!getGenerationResultsFromUser:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getGenerationResultsFromUser: "
+            },
+            {
+              "kind": "Content",
+              "text": "(discordId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "DiscordId",
+              "canonicalReference": "kyxbot-database!DiscordId:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<{\n    prompt: string;\n    timestamp: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    generation_results: {\n        image_url: string;\n    }[];\n}[]>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "getGenerationResultsFromUser",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 8
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!getGenerationResultsFromUserPaginated:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getGenerationResultsFromUserPaginated: "
+            },
+            {
+              "kind": "Content",
+              "text": "(discordId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "DiscordId",
+              "canonicalReference": "kyxbot-database!DiscordId:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", page?: number, pageSize?: number) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<{\n    prompt: string;\n    timestamp: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    generation_results: {\n        image_url: string;\n    }[];\n}[]>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "getGenerationResultsFromUserPaginated",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 8
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!getGenerationResultsFromUserWithinGuild:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getGenerationResultsFromUserWithinGuild: "
+            },
+            {
+              "kind": "Content",
+              "text": "(discordId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "DiscordId",
+              "canonicalReference": "kyxbot-database!DiscordId:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", guildId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "GuildId",
+              "canonicalReference": "kyxbot-database!GuildId:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<{\n    prompt: string;\n    timestamp: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    generation_results: {\n        image_url: string;\n    }[];\n}[]>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "getGenerationResultsFromUserWithinGuild",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 10
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!getGuildSettings:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getGuildSettings: "
+            },
+            {
+              "kind": "Content",
+              "text": "(guildId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "GuildId",
+              "canonicalReference": "kyxbot-database!GuildId:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<{\n    name: string | null;\n    guild_id: string;\n    personality: string | null;\n    usingPermissions: boolean | null;\n} | null>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "getGuildSettings",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!getModRoles:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getModRoles: "
+            },
+            {
+              "kind": "Content",
+              "text": "(guildId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "GuildId",
+              "canonicalReference": "kyxbot-database!GuildId:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<{\n    guild_id: string | null;\n    role: \"admin\" | \"manager\" | \"normal\" | null;\n    group_id: string | null;\n}[] | null>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "getModRoles",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!getPermissionsForGuildAndGroup:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getPermissionsForGuildAndGroup: "
+            },
+            {
+              "kind": "Content",
+              "text": "(guildId: string, groupId: string) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<{\n    guild_id: string | null;\n    role: \"admin\" | \"manager\" | \"normal\" | null;\n    group_id: string | null;\n} | null>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "getPermissionsForGuildAndGroup",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!getUploadedImageByName:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getUploadedImageByName: "
+            },
+            {
+              "kind": "Content",
+              "text": "(userId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "DiscordId",
+              "canonicalReference": "kyxbot-database!DiscordId:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", name: string) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<{\n    user: string;\n    timestamp: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    image_id: string;\n    image_url: string;\n    image_name: string;\n} | undefined>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "getUploadedImageByName",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 8
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!getUploadedImages:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getUploadedImages: "
+            },
+            {
+              "kind": "Content",
+              "text": "(userId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "DiscordId",
+              "canonicalReference": "kyxbot-database!DiscordId:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<{\n    user: string;\n    timestamp: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    image_id: string;\n    image_url: string;\n    image_name: string;\n}[]>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "getUploadedImages",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 8
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!getUpscaledImage:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getUpscaledImage: "
+            },
+            {
+              "kind": "Content",
+              "text": "(imageId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ImageGenerationResultId",
+              "canonicalReference": "kyxbot-database!ImageGenerationResultId:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<{\n    timestamp: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    image_url: string;\n    variation_id: string;\n    upscaled_by: string;\n    original_image: string;\n} | null>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "getUpscaledImage",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 8
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!getUserByDiscordId:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getUserByDiscordId: "
+            },
+            {
+              "kind": "Content",
+              "text": "(discordId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "DiscordId",
+              "canonicalReference": "kyxbot-database!DiscordId:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "User",
+              "canonicalReference": "kyxbot-database!User:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | null>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "getUserByDiscordId",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 8
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!getUserInformation:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getUserInformation: "
+            },
+            {
+              "kind": "Content",
+              "text": "(discordId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "DiscordId",
+              "canonicalReference": "kyxbot-database!DiscordId:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<{\n    user: string;\n    guild: string;\n    timestamp: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    id: number;\n    information: string;\n}[]>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "getUserInformation",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 8
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!getUserInformationInGuild:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getUserInformationInGuild: "
+            },
+            {
+              "kind": "Content",
+              "text": "(discordId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "DiscordId",
+              "canonicalReference": "kyxbot-database!DiscordId:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", guildId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "GuildId",
+              "canonicalReference": "kyxbot-database!GuildId:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<{\n    user: string;\n    guild: string;\n    timestamp: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    id: number;\n    information: string;\n}[]>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "getUserInformationInGuild",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 10
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!getUserPrivileges:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getUserPrivileges: "
+            },
+            {
+              "kind": "Content",
+              "text": "(guildId: string, groupIds: string[]) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<\"manager\" | \"normal\" | \"none\">"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "getUserPrivileges",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!getUserRoles:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getUserRoles: "
+            },
+            {
+              "kind": "Content",
+              "text": "(guildId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "GuildId",
+              "canonicalReference": "kyxbot-database!GuildId:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<{\n    guild_id: string | null;\n    role: \"admin\" | \"manager\" | \"normal\" | null;\n    group_id: string | null;\n}[] | null>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "getUserRoles",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "kyxbot-database!GuildId:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type GuildId = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Zod.infer",
+              "canonicalReference": "zod!TypeOf:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "selectGuildSettingsSchema",
+              "canonicalReference": "kyxbot-database!~selectGuildSettingsSchema:var"
+            },
+            {
+              "kind": "Content",
+              "text": ">[\"guild_id\"]"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "releaseTag": "Public",
+          "name": "GuildId",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!hasAccess:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "hasAccess: "
+            },
+            {
+              "kind": "Content",
+              "text": "(guildId: string, groupIds: string[]) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<boolean>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "hasAccess",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "kyxbot-database!ImageGenerationId:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ImageGenerationId = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Zod.infer",
+              "canonicalReference": "zod!TypeOf:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "selectImageGenerationSchema",
+              "canonicalReference": "kyxbot-database!~selectImageGenerationSchema:var"
+            },
+            {
+              "kind": "Content",
+              "text": ">[\"generation_id\"]"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "releaseTag": "Public",
+          "name": "ImageGenerationId",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "kyxbot-database!ImageGenerationResultId:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ImageGenerationResultId = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Zod.infer",
+              "canonicalReference": "zod!TypeOf:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "insertImageGenerationResultSchema",
+              "canonicalReference": "kyxbot-database!~insertImageGenerationResultSchema:var"
+            },
+            {
+              "kind": "Content",
+              "text": ">[\"image_id\"]"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "releaseTag": "Public",
+          "name": "ImageGenerationResultId",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!insertUploadedImage:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "insertUploadedImage: "
+            },
+            {
+              "kind": "Content",
+              "text": "(uploadedImage: "
+            },
+            {
+              "kind": "Reference",
+              "text": "NewUploadedImage",
+              "canonicalReference": "kyxbot-database!NewUploadedImage:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<void>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "insertUploadedImage",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!insertUserInformation:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "insertUserInformation: "
+            },
+            {
+              "kind": "Content",
+              "text": "(newUserInformation: "
+            },
+            {
+              "kind": "Reference",
+              "text": "NewUserInformation",
+              "canonicalReference": "kyxbot-database!NewUserInformation:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<{\n    user: string;\n    guild: string;\n    timestamp: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    id: number;\n    information: string;\n}>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "insertUserInformation",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 8
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "kyxbot-database!NewGuildSettings:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type NewGuildSettings = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Zod.infer",
+              "canonicalReference": "zod!TypeOf:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "insertGuildSettingsSchema",
+              "canonicalReference": "kyxbot-database!~insertGuildSettingsSchema:var"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "releaseTag": "Public",
+          "name": "NewGuildSettings",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "kyxbot-database!NewImageGeneration:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type NewImageGeneration = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Zod.infer",
+              "canonicalReference": "zod!TypeOf:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "insertImageGenerationSchema",
+              "canonicalReference": "kyxbot-database!~insertImageGenerationSchema:var"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "releaseTag": "Public",
+          "name": "NewImageGeneration",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "kyxbot-database!NewImageGenerationResult:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type NewImageGenerationResult = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Zod.infer",
+              "canonicalReference": "zod!TypeOf:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "insertImageGenerationResultSchema",
+              "canonicalReference": "kyxbot-database!~insertImageGenerationResultSchema:var"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "releaseTag": "Public",
+          "name": "NewImageGenerationResult",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "kyxbot-database!NewPermission:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type NewPermission = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Zod_2.infer",
+              "canonicalReference": "zod!TypeOf:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "insertPermissionsSchema",
+              "canonicalReference": "kyxbot-database!~insertPermissionsSchema:var"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "releaseTag": "Public",
+          "name": "NewPermission",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "kyxbot-database!NewUploadedImage:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type NewUploadedImage = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Zod.infer",
+              "canonicalReference": "zod!TypeOf:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "insertUploadedImageSchema",
+              "canonicalReference": "kyxbot-database!~insertUploadedImageSchema:var"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "releaseTag": "Public",
+          "name": "NewUploadedImage",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "kyxbot-database!NewUpscaledImage:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type NewUpscaledImage = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Zod.infer",
+              "canonicalReference": "zod!TypeOf:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "insertUpscaledImageSchema",
+              "canonicalReference": "kyxbot-database!~insertUpscaledImageSchema:var"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "releaseTag": "Public",
+          "name": "NewUpscaledImage",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "kyxbot-database!NewUserInformation:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type NewUserInformation = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Zod.infer",
+              "canonicalReference": "zod!TypeOf:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "insertUserInformationSchema",
+              "canonicalReference": "kyxbot-database!~insertUserInformationSchema:var"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "releaseTag": "Public",
+          "name": "NewUserInformation",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "kyxbot-database!Permission:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type Permission = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Zod_2.infer",
+              "canonicalReference": "zod!TypeOf:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "selectPermissionsSchema",
+              "canonicalReference": "kyxbot-database!~selectPermissionsSchema:var"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "releaseTag": "Public",
+          "name": "Permission",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!removeModRole:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "removeModRole: "
+            },
+            {
+              "kind": "Content",
+              "text": "(guildId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "GuildId",
+              "canonicalReference": "kyxbot-database!GuildId:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<void>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "removeModRole",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!removeUserRole:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "removeUserRole: "
+            },
+            {
+              "kind": "Content",
+              "text": "(guildId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "GuildId",
+              "canonicalReference": "kyxbot-database!GuildId:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", roleId: string) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<void>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "removeUserRole",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!resetPermissions:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "resetPermissions: "
+            },
+            {
+              "kind": "Content",
+              "text": "(guildId: string, modGroups: string[], userGroups: string[]) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<void>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "resetPermissions",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "kyxbot-database!Role:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type Role = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Zod_2.infer",
+              "canonicalReference": "zod!TypeOf:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "roleSchema",
+              "canonicalReference": "kyxbot-database!~roleSchema:var"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "releaseTag": "Public",
+          "name": "Role",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!setModRole:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "setModRole: "
+            },
+            {
+              "kind": "Content",
+              "text": "(guildId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "GuildId",
+              "canonicalReference": "kyxbot-database!GuildId:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", roleId: string) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<void>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "setModRole",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!updateGenerationStatus:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "updateGenerationStatus: "
+            },
+            {
+              "kind": "Content",
+              "text": "(generationId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ImageGenerationId",
+              "canonicalReference": "kyxbot-database!ImageGenerationId:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", generationStatus: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ImageGenerationStatus",
+              "canonicalReference": "kyxbot-database!~ImageGenerationStatus:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<void>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "updateGenerationStatus",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 8
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!updateGuildSettings:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "updateGuildSettings: "
+            },
+            {
+              "kind": "Content",
+              "text": "(guildId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "GuildId",
+              "canonicalReference": "kyxbot-database!GuildId:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", guildSettings: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Partial",
+              "canonicalReference": "!Partial:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "NewGuildSettings",
+              "canonicalReference": "kyxbot-database!NewGuildSettings:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<void>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "updateGuildSettings",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 10
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "kyxbot-database!UploadedImage:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type UploadedImage = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Zod.infer",
+              "canonicalReference": "zod!TypeOf:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "selectUploadedImageSchema",
+              "canonicalReference": "kyxbot-database!~selectUploadedImageSchema:var"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "releaseTag": "Public",
+          "name": "UploadedImage",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "kyxbot-database!UploadedImageId:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type UploadedImageId = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Zod.infer",
+              "canonicalReference": "zod!TypeOf:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "selectUploadedImageSchema",
+              "canonicalReference": "kyxbot-database!~selectUploadedImageSchema:var"
+            },
+            {
+              "kind": "Content",
+              "text": ">[\"image_id\"]"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "releaseTag": "Public",
+          "name": "UploadedImageId",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "kyxbot-database!UpscaledImageId:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type UpscaledImageId = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Zod.infer",
+              "canonicalReference": "zod!TypeOf:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "selectUpscaledImageSchema",
+              "canonicalReference": "kyxbot-database!~selectUpscaledImageSchema:var"
+            },
+            {
+              "kind": "Content",
+              "text": ">[\"variation_id\"]"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "releaseTag": "Public",
+          "name": "UpscaledImageId",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kyxbot-database!upsertGuildSettings:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "upsertGuildSettings: "
+            },
+            {
+              "kind": "Content",
+              "text": "(guildId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "GuildId",
+              "canonicalReference": "kyxbot-database!GuildId:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", guildSettings: "
+            },
+            {
+              "kind": "Reference",
+              "text": "NewGuildSettings",
+              "canonicalReference": "kyxbot-database!NewGuildSettings:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<void>"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "upsertGuildSettings",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 8
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "kyxbot-database!User:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type User = "
+            },
+            {
+              "kind": "Reference",
+              "text": "z.infer",
+              "canonicalReference": "zod!TypeOf:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "selectUserSchema",
+              "canonicalReference": "kyxbot-database!~selectUserSchema:var"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "releaseTag": "Public",
+          "name": "User",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "kyxbot-database!UserInformation:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type UserInformation = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Zod.infer",
+              "canonicalReference": "zod!TypeOf:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "selectUserInformationSchema",
+              "canonicalReference": "kyxbot-database!~selectUserInformationSchema:var"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "releaseTag": "Public",
+          "name": "UserInformation",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "kyxbot-database!UserInformationId:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type UserInformationId = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Zod.infer",
+              "canonicalReference": "zod!TypeOf:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<typeof "
+            },
+            {
+              "kind": "Reference",
+              "text": "selectUserInformationSchema",
+              "canonicalReference": "kyxbot-database!~selectUserInformationSchema:var"
+            },
+            {
+              "kind": "Content",
+              "text": ">[\"id\"]"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "src/kyxbot-database.ts",
+          "releaseTag": "Public",
+          "name": "UserInformationId",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        }
+      ]
+    }
+  ]
+}

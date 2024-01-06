@@ -20,3 +20,4 @@ declare const guildSettingsApi: {
     upsertGuildSettings: (guildId: GuildId, guildSettings: NewGuildSettings) => Promise<void>;
 };
 export default guildSettingsApi;
+//# sourceMappingURL=guildSettingsApi.d.ts.map

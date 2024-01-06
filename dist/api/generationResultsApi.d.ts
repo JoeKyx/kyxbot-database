@@ -50,3 +50,4 @@ declare const generationResultsApi: {
     getAmountOfPagesForUser: (discordId: DiscordId, pageSize: number) => Promise<number>;
 };
 export default generationResultsApi;
+//# sourceMappingURL=generationResultsApi.d.ts.map

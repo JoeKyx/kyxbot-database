@@ -119,3 +119,4 @@ export declare const selectUserInformationSchema: import("zod").ZodObject<{
 export type UserInformation = Zod.infer<typeof selectUserInformationSchema>;
 export type UserInformationId = Zod.infer<typeof selectUserInformationSchema>["id"];
 export type NewUserInformation = Zod.infer<typeof insertUserInformationSchema>;
+//# sourceMappingURL=userInformations.d.ts.map

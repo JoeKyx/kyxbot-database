@@ -50,3 +50,4 @@ declare const permissionsApi: {
     resetPermissions: (guildId: string, modGroups: string[], userGroups: string[]) => Promise<void>;
 };
 export default permissionsApi;
+//# sourceMappingURL=permissionsApi.d.ts.map

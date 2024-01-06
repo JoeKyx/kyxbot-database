@@ -73,3 +73,4 @@ export type NewPermission = Zod.infer<typeof insertPermissionsSchema>;
 export type Permission = Zod.infer<typeof selectPermissionsSchema>;
 export declare const roleSchema: Zod.ZodEnum<["admin", "manager", "normal"]>;
 export type Role = Zod.infer<typeof roleSchema>;
+//# sourceMappingURL=permissionsSchema.d.ts.map

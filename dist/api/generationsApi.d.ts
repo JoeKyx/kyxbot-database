@@ -6,3 +6,4 @@ declare const generationsApi: {
     updateGenerationStatus: (generationId: ImageGenerationId, generationStatus: ImageGenerationStatus) => Promise<void>;
 };
 export default generationsApi;
+//# sourceMappingURL=generationsApi.d.ts.map

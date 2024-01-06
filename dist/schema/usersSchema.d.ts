@@ -60,3 +60,4 @@ export declare const discordIdSchema: z.ZodObject<Pick<{
 }>;
 export type User = z.infer<typeof selectUserSchema>;
 export type DiscordId = z.infer<typeof discordIdSchema>["discordId"];
+//# sourceMappingURL=usersSchema.d.ts.map
