@@ -1,5 +1,5 @@
 import { and, count, desc, eq, sql } from "drizzle-orm";
-import { db } from "../kyxbot-database";
+import { db } from "../db-connection";
 import {
   NewImageGenerationResult,
   image_generation_results,

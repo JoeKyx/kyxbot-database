@@ -1,5 +1,5 @@
 import { ImageGenerationResultId } from "../schema/imageGenerationsResultsSchema";
-import { db } from "../kyxbot-database";
+import { db } from "../db-connection";
 import {
   NewUpscaledImage,
   upscaled_images,

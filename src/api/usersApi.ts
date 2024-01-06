@@ -1,4 +1,4 @@
-import { db } from "../kyxbot-database";
+import { db } from "../db-connection";
 import { DiscordId, User, users } from "../schema/usersSchema";
 import { eq } from "drizzle-orm";
 import "dotenv/config";
