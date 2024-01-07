@@ -54,18 +54,18 @@ export declare const image_generation_results: import("drizzle-orm/pg-core").PgT
     dialect: "pg";
 }>;
 export declare const insertImageGenerationResultSchema: import("zod").ZodObject<{
-    image_id: import("zod").ZodString;
     generation_id: import("zod").ZodString;
+    image_id: import("zod").ZodString;
     image_url: import("zod").ZodString;
     upscaled_image_url: import("zod").ZodOptional<import("zod").ZodNullable<import("zod").ZodString>>;
 }, import("zod").UnknownKeysParam, import("zod").ZodTypeAny, {
-    image_id: string;
     generation_id: string;
+    image_id: string;
     image_url: string;
     upscaled_image_url?: string | null | undefined;
 }, {
-    image_id: string;
     generation_id: string;
+    image_id: string;
     image_url: string;
     upscaled_image_url?: string | null | undefined;
 }>;

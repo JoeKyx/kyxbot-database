@@ -90,12 +90,12 @@ export declare const image_generations: import("drizzle-orm/pg-core").PgTableWit
     dialect: "pg";
 }>;
 export declare const insertImageGenerationSchema: import("zod").ZodObject<Omit<{
+    status: import("zod").ZodString;
     generation_id: import("zod").ZodString;
     user: import("zod").ZodString;
     guild: import("zod").ZodString;
     prompt: import("zod").ZodString;
     interactionId: import("zod").ZodString;
-    status: import("zod").ZodString;
     timestamp: import("zod").ZodOptional<import("zod").ZodDate>;
 }, "status">, import("zod").UnknownKeysParam, import("zod").ZodTypeAny, {
     generation_id: string;
@@ -121,20 +121,20 @@ export declare const selectImageGenerationSchema: import("zod").ZodObject<{
     status: import("zod").ZodString;
     timestamp: import("zod").ZodDate;
 }, import("zod").UnknownKeysParam, import("zod").ZodTypeAny, {
+    status: string;
     generation_id: string;
     user: string;
     guild: string;
     prompt: string;
     interactionId: string;
-    status: string;
     timestamp: Date;
 }, {
+    status: string;
     generation_id: string;
     user: string;
     guild: string;
     prompt: string;
     interactionId: string;
-    status: string;
     timestamp: Date;
 }>;
 export type NewImageGeneration = Zod.infer<typeof insertImageGenerationSchema>;

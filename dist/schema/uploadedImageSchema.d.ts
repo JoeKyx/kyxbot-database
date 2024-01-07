@@ -72,32 +72,32 @@ export declare const selectUploadedImageSchema: import("zod").ZodObject<{
     image_name: import("zod").ZodString;
     timestamp: import("zod").ZodDate;
 }, import("zod").UnknownKeysParam, import("zod").ZodTypeAny, {
-    image_id: string;
     user: string;
     timestamp: Date;
+    image_id: string;
     image_url: string;
     image_name: string;
 }, {
-    image_id: string;
     user: string;
     timestamp: Date;
+    image_id: string;
     image_url: string;
     image_name: string;
 }>;
 export declare const insertUploadedImageSchema: import("zod").ZodObject<Omit<{
-    image_id: import("zod").ZodString;
     user: import("zod").ZodString;
     timestamp: import("zod").ZodOptional<import("zod").ZodDate>;
+    image_id: import("zod").ZodString;
     image_url: import("zod").ZodString;
     image_name: import("zod").ZodString;
 }, "timestamp">, import("zod").UnknownKeysParam, import("zod").ZodTypeAny, {
-    image_id: string;
     user: string;
+    image_id: string;
     image_url: string;
     image_name: string;
 }, {
-    image_id: string;
     user: string;
+    image_id: string;
     image_url: string;
     image_name: string;
 }>;
