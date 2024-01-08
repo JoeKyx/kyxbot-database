@@ -1,5 +1,5 @@
-import { db } from "../db-connection";
-import { DiscordId, User, users } from "../schema/usersSchema";
+import { db } from "../db-connection.js";
+import { DiscordId, User, users } from "../schema/usersSchema.js";
 import { eq } from "drizzle-orm";
 import "dotenv/config";
 

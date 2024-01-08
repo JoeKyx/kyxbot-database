@@ -1,6 +1,6 @@
-import { NewUserInformation } from "../schema/userInformations";
-import { DiscordId } from "../schema/usersSchema";
-import { GuildId } from "../schema/guildSettingsSchema";
+import { NewUserInformation } from "../schema/userInformations.js";
+import { DiscordId } from "../schema/usersSchema.js";
+import { GuildId } from "../schema/guildSettingsSchema.js";
 export declare const insertUserInformation: (newUserInformation: NewUserInformation) => Promise<{
     user: string;
     guild: string;

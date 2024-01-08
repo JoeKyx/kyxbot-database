@@ -1,7 +1,7 @@
 import { and, desc, eq } from "drizzle-orm";
-import { db } from "../db-connection";
-import { userInformations, } from "../schema/userInformations";
-import { createNewUser, getUserByDiscordId } from "./usersApi";
+import { db } from "../db-connection.js";
+import { userInformations, } from "../schema/userInformations.js";
+import { createNewUser, getUserByDiscordId } from "./usersApi.js";
 export const insertUserInformation = async (newUserInformation) => {
     const dbUser = await getUserByDiscordId(newUserInformation.user);
     if (!dbUser) {

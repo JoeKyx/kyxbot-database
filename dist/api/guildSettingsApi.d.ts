@@ -1,4 +1,4 @@
-import { GuildId, NewGuildSettings } from "../schema/guildSettingsSchema";
+import { GuildId, NewGuildSettings } from "../schema/guildSettingsSchema.js";
 export declare const createGuildSettings: (guildSettings: NewGuildSettings) => Promise<void>;
 export declare const getGuildSettings: (guildId: GuildId) => Promise<{
     guild_id: string;

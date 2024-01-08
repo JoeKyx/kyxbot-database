@@ -1,5 +1,5 @@
-import { ImageGenerationResultId } from "../schema/imageGenerationsResultsSchema";
-import { NewUpscaledImage } from "../schema/upscaledImagesSchema";
+import { ImageGenerationResultId } from "../schema/imageGenerationsResultsSchema.js";
+import { NewUpscaledImage } from "../schema/upscaledImagesSchema.js";
 export declare const getUpscaledImage: (imageId: ImageGenerationResultId) => Promise<{
     timestamp: Date;
     image_url: string;

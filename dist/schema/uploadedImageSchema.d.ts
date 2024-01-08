@@ -1,8 +1,8 @@
-export declare const uploaded_images: import("drizzle-orm/pg-core").PgTableWithColumns<{
+export declare const uploaded_images: import("drizzle-orm/pg-core/table.js").PgTableWithColumns<{
     name: "uploaded_images";
     schema: undefined;
     columns: {
-        image_id: import("drizzle-orm/pg-core").PgColumn<{
+        image_id: import("drizzle-orm/pg-core/index.js").PgColumn<{
             name: "image_id";
             tableName: "uploaded_images";
             dataType: "string";
@@ -14,7 +14,7 @@ export declare const uploaded_images: import("drizzle-orm/pg-core").PgTableWithC
             enumValues: [string, ...string[]];
             baseColumn: never;
         }, {}, {}>;
-        user: import("drizzle-orm/pg-core").PgColumn<{
+        user: import("drizzle-orm/pg-core/index.js").PgColumn<{
             name: "user";
             tableName: "uploaded_images";
             dataType: "string";
@@ -26,7 +26,7 @@ export declare const uploaded_images: import("drizzle-orm/pg-core").PgTableWithC
             enumValues: [string, ...string[]];
             baseColumn: never;
         }, {}, {}>;
-        image_url: import("drizzle-orm/pg-core").PgColumn<{
+        image_url: import("drizzle-orm/pg-core/index.js").PgColumn<{
             name: "image_url";
             tableName: "uploaded_images";
             dataType: "string";
@@ -38,7 +38,7 @@ export declare const uploaded_images: import("drizzle-orm/pg-core").PgTableWithC
             enumValues: [string, ...string[]];
             baseColumn: never;
         }, {}, {}>;
-        image_name: import("drizzle-orm/pg-core").PgColumn<{
+        image_name: import("drizzle-orm/pg-core/index.js").PgColumn<{
             name: "image_name";
             tableName: "uploaded_images";
             dataType: "string";
@@ -50,7 +50,7 @@ export declare const uploaded_images: import("drizzle-orm/pg-core").PgTableWithC
             enumValues: [string, ...string[]];
             baseColumn: never;
         }, {}, {}>;
-        timestamp: import("drizzle-orm/pg-core").PgColumn<{
+        timestamp: import("drizzle-orm/pg-core/index.js").PgColumn<{
             name: "timestamp";
             tableName: "uploaded_images";
             dataType: "date";

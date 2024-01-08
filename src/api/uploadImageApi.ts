@@ -1,10 +1,10 @@
 import { and, eq } from "drizzle-orm";
-import { db } from "../db-connection";
+import { db } from "../db-connection.js";
 import {
   NewUploadedImage,
   uploaded_images,
-} from "../schema/uploadedImageSchema";
-import { DiscordId } from "../schema/usersSchema";
+} from "../schema/uploadedImageSchema.js";
+import { DiscordId } from "../schema/usersSchema.js";
 
 export const insertUploadedImage = async (uploadedImage: NewUploadedImage) => {
   console.log(`Inserting uploaded image with id: ${uploadedImage.image_id}`);

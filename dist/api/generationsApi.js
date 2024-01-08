@@ -1,6 +1,6 @@
 import { eq } from "drizzle-orm";
-import { db } from "../db-connection";
-import { image_generations, } from "../schema/imageGenerationsSchema";
+import { db } from "../db-connection.js";
+import { image_generations, } from "../schema/imageGenerationsSchema.js";
 export const addGeneration = async (generation) => {
     console.log(`Inserting generation with id: ${generation.generation_id}`);
     await db.insert(image_generations).values({ ...generation, status: "done" });

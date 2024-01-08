@@ -1,6 +1,6 @@
 import { pgTable, timestamp, varchar } from "drizzle-orm/pg-core";
-import { users } from "./usersSchema";
-import { image_generation_results } from "./imageGenerationsResultsSchema";
+import { users } from "./usersSchema.js";
+import { image_generation_results } from "./imageGenerationsResultsSchema.js";
 import { createInsertSchema } from "drizzle-zod";
 import { sql } from "drizzle-orm";
 export const upscaled_images = pgTable("upscaled_images", {

@@ -1,10 +1,10 @@
 import { eq } from "drizzle-orm";
-import { db } from "../db-connection";
+import { db } from "../db-connection.js";
 import {
   GuildId,
   NewGuildSettings,
   guild_settings,
-} from "../schema/guildSettingsSchema";
+} from "../schema/guildSettingsSchema.js";
 
 export const createGuildSettings = async (guildSettings: NewGuildSettings) => {
   console.log(`Inserting guild settings with id: ${guildSettings.guild_id}`);

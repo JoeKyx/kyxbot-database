@@ -1,5 +1,5 @@
-import { NewUploadedImage } from "../schema/uploadedImageSchema";
-import { DiscordId } from "../schema/usersSchema";
+import { NewUploadedImage } from "../schema/uploadedImageSchema.js";
+import { DiscordId } from "../schema/usersSchema.js";
 export declare const insertUploadedImage: (uploadedImage: NewUploadedImage) => Promise<void>;
 export declare const getUploadedImages: (userId: DiscordId) => Promise<{
     user: string;

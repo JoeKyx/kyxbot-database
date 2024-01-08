@@ -1,14 +1,14 @@
 import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
 import dotenv from "dotenv";
-import { guild_settings } from "./schema/guildSettingsSchema";
-import { imageGenerationResultsRelations, image_generation_results, } from "./schema/imageGenerationsResultsSchema";
-import { imageGenerationRelations, image_generations, } from "./schema/imageGenerationsSchema";
-import { permissions } from "./schema/permissionsSchema";
-import { uploaded_images } from "./schema/uploadedImageSchema";
-import { upscaled_images } from "./schema/upscaledImagesSchema";
-import { userInformations } from "./schema/userInformations";
-import { users } from "./schema/usersSchema";
+import { guild_settings } from "./schema/guildSettingsSchema.js";
+import { imageGenerationResultsRelations, image_generation_results, } from "./schema/imageGenerationsResultsSchema.js";
+import { imageGenerationRelations, image_generations, } from "./schema/imageGenerationsSchema.js";
+import { permissions } from "./schema/permissionsSchema.js";
+import { uploaded_images } from "./schema/uploadedImageSchema.js";
+import { upscaled_images } from "./schema/upscaledImagesSchema.js";
+import { userInformations } from "./schema/userInformations.js";
+import { users } from "./schema/usersSchema.js";
 dotenv.config();
 const connectionString = process.env.DATABASE_URL;
 if (!connectionString) {

@@ -1,5 +1,5 @@
 import { pgTable, serial, timestamp } from "drizzle-orm/pg-core";
-import { users } from "./usersSchema";
+import { users } from "./usersSchema.js";
 import { sql } from "drizzle-orm";
 import { createInsertSchema, createSelectSchema } from "drizzle-zod";
 import { varchar } from "drizzle-orm/pg-core";

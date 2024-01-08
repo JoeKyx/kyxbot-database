@@ -1,5 +1,5 @@
-import { db } from "../db-connection";
-import { users } from "../schema/usersSchema";
+import { db } from "../db-connection.js";
+import { users } from "../schema/usersSchema.js";
 import { eq } from "drizzle-orm";
 import "dotenv/config";
 export const getUserByDiscordId = async (discordId) => {

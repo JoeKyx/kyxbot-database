@@ -1,6 +1,6 @@
 import { and, eq, inArray } from 'drizzle-orm';
-import { db } from '../db-connection';
-import { permissions } from '../schema/permissionsSchema';
+import { db } from '../db-connection.js';
+import { permissions } from '../schema/permissionsSchema.js';
 export const createPermissions = async (newPermission) => {
     console.log(`Inserting permissions with id: ${permissions.guild_id}`);
     await db.insert(permissions).values(newPermission);

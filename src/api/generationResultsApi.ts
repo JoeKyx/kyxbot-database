@@ -1,12 +1,12 @@
 import { and, count, desc, eq, sql } from "drizzle-orm";
-import { db } from "../db-connection";
+import { db } from "../db-connection.js";
 import {
   NewImageGenerationResult,
   image_generation_results,
-} from "../schema/imageGenerationsResultsSchema";
-import { image_generations } from "../schema/imageGenerationsSchema";
-import { DiscordId } from "../schema/usersSchema";
-import { GuildId } from "../schema/guildSettingsSchema";
+} from "../schema/imageGenerationsResultsSchema.js";
+import { image_generations } from "../schema/imageGenerationsSchema.js";
+import { DiscordId } from "../schema/usersSchema.js";
+import { GuildId } from "../schema/guildSettingsSchema.js";
 
 
 export const addGenerationResults = async (

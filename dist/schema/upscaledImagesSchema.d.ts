@@ -1,8 +1,8 @@
-export declare const upscaled_images: import("drizzle-orm/pg-core").PgTableWithColumns<{
+export declare const upscaled_images: import("drizzle-orm/pg-core/table.js").PgTableWithColumns<{
     name: "upscaled_images";
     schema: undefined;
     columns: {
-        variation_id: import("drizzle-orm/pg-core").PgColumn<{
+        variation_id: import("drizzle-orm/pg-core/index.js").PgColumn<{
             name: "variation_id";
             tableName: "upscaled_images";
             dataType: "string";
@@ -14,7 +14,7 @@ export declare const upscaled_images: import("drizzle-orm/pg-core").PgTableWithC
             enumValues: [string, ...string[]];
             baseColumn: never;
         }, {}, {}>;
-        upscaled_by: import("drizzle-orm/pg-core").PgColumn<{
+        upscaled_by: import("drizzle-orm/pg-core/index.js").PgColumn<{
             name: "upscaled_by";
             tableName: "upscaled_images";
             dataType: "string";
@@ -26,7 +26,7 @@ export declare const upscaled_images: import("drizzle-orm/pg-core").PgTableWithC
             enumValues: [string, ...string[]];
             baseColumn: never;
         }, {}, {}>;
-        image_url: import("drizzle-orm/pg-core").PgColumn<{
+        image_url: import("drizzle-orm/pg-core/index.js").PgColumn<{
             name: "image_url";
             tableName: "upscaled_images";
             dataType: "string";
@@ -38,7 +38,7 @@ export declare const upscaled_images: import("drizzle-orm/pg-core").PgTableWithC
             enumValues: [string, ...string[]];
             baseColumn: never;
         }, {}, {}>;
-        original_image: import("drizzle-orm/pg-core").PgColumn<{
+        original_image: import("drizzle-orm/pg-core/index.js").PgColumn<{
             name: "original_image";
             tableName: "upscaled_images";
             dataType: "string";
@@ -50,7 +50,7 @@ export declare const upscaled_images: import("drizzle-orm/pg-core").PgTableWithC
             enumValues: [string, ...string[]];
             baseColumn: never;
         }, {}, {}>;
-        timestamp: import("drizzle-orm/pg-core").PgColumn<{
+        timestamp: import("drizzle-orm/pg-core/index.js").PgColumn<{
             name: "timestamp";
             tableName: "upscaled_images";
             dataType: "date";

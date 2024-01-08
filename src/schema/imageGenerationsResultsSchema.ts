@@ -1,5 +1,5 @@
 import { pgTable, text, varchar } from "drizzle-orm/pg-core";
-import { image_generations } from "./imageGenerationsSchema";
+import { image_generations } from "./imageGenerationsSchema.js";
 import { createInsertSchema } from "drizzle-zod";
 import { relations } from "drizzle-orm";
 

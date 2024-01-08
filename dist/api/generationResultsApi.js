@@ -1,7 +1,7 @@
 import { and, count, desc, eq } from "drizzle-orm";
-import { db } from "../db-connection";
-import { image_generation_results, } from "../schema/imageGenerationsResultsSchema";
-import { image_generations } from "../schema/imageGenerationsSchema";
+import { db } from "../db-connection.js";
+import { image_generation_results, } from "../schema/imageGenerationsResultsSchema.js";
+import { image_generations } from "../schema/imageGenerationsSchema.js";
 export const addGenerationResults = async (generationResults) => {
     console.log(`Inserting generation results`);
     await db.insert(image_generation_results).values(generationResults);

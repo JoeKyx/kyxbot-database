@@ -1,5 +1,5 @@
 import { pgTable, text, timestamp, varchar } from "drizzle-orm/pg-core";
-import { users } from "./usersSchema";
+import { users } from "./usersSchema.js";
 import { createInsertSchema, createSelectSchema } from "drizzle-zod";
 import { sql } from "drizzle-orm";
 export const uploaded_images = pgTable("uploaded_images", {

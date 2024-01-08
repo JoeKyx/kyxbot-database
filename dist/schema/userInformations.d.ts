@@ -1,8 +1,8 @@
-export declare const userInformations: import("drizzle-orm/pg-core").PgTableWithColumns<{
+export declare const userInformations: import("drizzle-orm/pg-core/table.js").PgTableWithColumns<{
     name: "user_informations";
     schema: undefined;
     columns: {
-        id: import("drizzle-orm/pg-core").PgColumn<{
+        id: import("drizzle-orm/pg-core/index.js").PgColumn<{
             name: "id";
             tableName: "user_informations";
             dataType: "number";
@@ -14,7 +14,7 @@ export declare const userInformations: import("drizzle-orm/pg-core").PgTableWith
             enumValues: undefined;
             baseColumn: never;
         }, {}, {}>;
-        user: import("drizzle-orm/pg-core").PgColumn<{
+        user: import("drizzle-orm/pg-core/index.js").PgColumn<{
             name: "user";
             tableName: "user_informations";
             dataType: "string";
@@ -26,7 +26,7 @@ export declare const userInformations: import("drizzle-orm/pg-core").PgTableWith
             enumValues: [string, ...string[]];
             baseColumn: never;
         }, {}, {}>;
-        guild: import("drizzle-orm/pg-core").PgColumn<{
+        guild: import("drizzle-orm/pg-core/index.js").PgColumn<{
             name: "guild";
             tableName: "user_informations";
             dataType: "string";
@@ -38,7 +38,7 @@ export declare const userInformations: import("drizzle-orm/pg-core").PgTableWith
             enumValues: [string, ...string[]];
             baseColumn: never;
         }, {}, {}>;
-        information: import("drizzle-orm/pg-core").PgColumn<{
+        information: import("drizzle-orm/pg-core/index.js").PgColumn<{
             name: "information";
             tableName: "user_informations";
             dataType: "string";
@@ -50,7 +50,7 @@ export declare const userInformations: import("drizzle-orm/pg-core").PgTableWith
             enumValues: [string, ...string[]];
             baseColumn: never;
         }, {}, {}>;
-        timestamp: import("drizzle-orm/pg-core").PgColumn<{
+        timestamp: import("drizzle-orm/pg-core/index.js").PgColumn<{
             name: "timestamp";
             tableName: "user_informations";
             dataType: "date";

@@ -1,5 +1,5 @@
-import { GuildId } from '../schema/guildSettingsSchema';
-import { NewPermission, Role } from '../schema/permissionsSchema';
+import { GuildId } from '../schema/guildSettingsSchema.js';
+import { NewPermission, Role } from '../schema/permissionsSchema.js';
 export declare const createPermissions: (newPermission: NewPermission) => Promise<void>;
 export declare const setModRole: (guildId: GuildId, roleId: string) => Promise<void>;
 export declare const removeModRole: (guildId: GuildId) => Promise<void>;

@@ -1,8 +1,8 @@
-export declare const image_generation_results: import("drizzle-orm/pg-core").PgTableWithColumns<{
+export declare const image_generation_results: import("drizzle-orm/pg-core/table.js").PgTableWithColumns<{
     name: "image_generation_results";
     schema: undefined;
     columns: {
-        image_id: import("drizzle-orm/pg-core").PgColumn<{
+        image_id: import("drizzle-orm/pg-core/index.js").PgColumn<{
             name: "image_id";
             tableName: "image_generation_results";
             dataType: "string";
@@ -14,7 +14,7 @@ export declare const image_generation_results: import("drizzle-orm/pg-core").PgT
             enumValues: [string, ...string[]];
             baseColumn: never;
         }, {}, {}>;
-        generation_id: import("drizzle-orm/pg-core").PgColumn<{
+        generation_id: import("drizzle-orm/pg-core/index.js").PgColumn<{
             name: "generation_id";
             tableName: "image_generation_results";
             dataType: "string";
@@ -26,7 +26,7 @@ export declare const image_generation_results: import("drizzle-orm/pg-core").PgT
             enumValues: [string, ...string[]];
             baseColumn: never;
         }, {}, {}>;
-        image_url: import("drizzle-orm/pg-core").PgColumn<{
+        image_url: import("drizzle-orm/pg-core/index.js").PgColumn<{
             name: "image_url";
             tableName: "image_generation_results";
             dataType: "string";
@@ -38,7 +38,7 @@ export declare const image_generation_results: import("drizzle-orm/pg-core").PgT
             enumValues: [string, ...string[]];
             baseColumn: never;
         }, {}, {}>;
-        upscaled_image_url: import("drizzle-orm/pg-core").PgColumn<{
+        upscaled_image_url: import("drizzle-orm/pg-core/index.js").PgColumn<{
             name: "upscaled_image_url";
             tableName: "image_generation_results";
             dataType: "string";

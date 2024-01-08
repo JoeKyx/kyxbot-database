@@ -1,9 +1,9 @@
-import { ImageGenerationResultId } from "../schema/imageGenerationsResultsSchema";
-import { db } from "../db-connection";
+import { ImageGenerationResultId } from "../schema/imageGenerationsResultsSchema.js";
+import { db } from "../db-connection.js";
 import {
   NewUpscaledImage,
   upscaled_images,
-} from "../schema/upscaledImagesSchema";
+} from "../schema/upscaledImagesSchema.js";
 import { eq } from "drizzle-orm";
 
 export const getUpscaledImage = async (imageId: ImageGenerationResultId) => {

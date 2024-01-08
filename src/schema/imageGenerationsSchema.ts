@@ -1,7 +1,7 @@
 import { pgTable, integer, varchar, text, timestamp } from "drizzle-orm/pg-core";
 import { users } from "./usersSchema";
 import { createInsertSchema, createSelectSchema } from "drizzle-zod";
-import { image_generation_results } from "./imageGenerationsResultsSchema";
+import { image_generation_results } from "./imageGenerationsResultsSchema.js";
 import { relations, sql } from "drizzle-orm";
 
 export const image_generations = pgTable("image_generations", {

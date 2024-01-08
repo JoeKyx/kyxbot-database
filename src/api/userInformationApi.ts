@@ -1,12 +1,12 @@
 import { and, desc, eq } from "drizzle-orm";
-import { db } from "../db-connection";
+import { db } from "../db-connection.js";
 import {
   NewUserInformation,
   userInformations,
-} from "../schema/userInformations";
-import { DiscordId } from "../schema/usersSchema";
-import { createNewUser, getUserByDiscordId } from "./usersApi";
-import { GuildId } from "../schema/guildSettingsSchema";
+} from "../schema/userInformations.js";
+import { DiscordId } from "../schema/usersSchema.js";
+import { createNewUser, getUserByDiscordId } from "./usersApi.js";
+import { GuildId } from "../schema/guildSettingsSchema.js";
 
 export const insertUserInformation = async (
   newUserInformation: NewUserInformation

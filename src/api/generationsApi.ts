@@ -1,12 +1,12 @@
 import { eq } from "drizzle-orm";
-import { db } from "../db-connection";
+import { db } from "../db-connection.js";
 import {
   ImageGenerationId,
   ImageGenerationStatus,
   NewImageGeneration,
   image_generations,
-} from "../schema/imageGenerationsSchema";
-import { UserInformationId } from "../schema/userInformations";
+} from "../schema/imageGenerationsSchema.js";
+
 
 export const addGeneration = async (generation: NewImageGeneration) => {
   console.log(`Inserting generation with id: ${generation.generation_id}`);
