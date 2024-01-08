@@ -1,8 +1,8 @@
-export declare const image_generations: import("drizzle-orm/pg-core").PgTableWithColumns<{
+export declare const image_generations: import("drizzle-orm/pg-core/table.js").PgTableWithColumns<{
     name: "image_generations";
     schema: undefined;
     columns: {
-        generation_id: import("drizzle-orm/pg-core").PgColumn<{
+        generation_id: import("drizzle-orm/pg-core/index.js").PgColumn<{
             name: "generation_id";
             tableName: "image_generations";
             dataType: "string";
@@ -14,7 +14,7 @@ export declare const image_generations: import("drizzle-orm/pg-core").PgTableWit
             enumValues: [string, ...string[]];
             baseColumn: never;
         }, {}, {}>;
-        user: import("drizzle-orm/pg-core").PgColumn<{
+        user: import("drizzle-orm/pg-core/index.js").PgColumn<{
             name: "user";
             tableName: "image_generations";
             dataType: "string";
@@ -26,7 +26,7 @@ export declare const image_generations: import("drizzle-orm/pg-core").PgTableWit
             enumValues: [string, ...string[]];
             baseColumn: never;
         }, {}, {}>;
-        guild: import("drizzle-orm/pg-core").PgColumn<{
+        guild: import("drizzle-orm/pg-core/index.js").PgColumn<{
             name: "guild";
             tableName: "image_generations";
             dataType: "string";
@@ -38,7 +38,7 @@ export declare const image_generations: import("drizzle-orm/pg-core").PgTableWit
             enumValues: [string, ...string[]];
             baseColumn: never;
         }, {}, {}>;
-        prompt: import("drizzle-orm/pg-core").PgColumn<{
+        prompt: import("drizzle-orm/pg-core/index.js").PgColumn<{
             name: "prompt";
             tableName: "image_generations";
             dataType: "string";
@@ -50,7 +50,7 @@ export declare const image_generations: import("drizzle-orm/pg-core").PgTableWit
             enumValues: [string, ...string[]];
             baseColumn: never;
         }, {}, {}>;
-        interactionId: import("drizzle-orm/pg-core").PgColumn<{
+        interactionId: import("drizzle-orm/pg-core/index.js").PgColumn<{
             name: "message_id";
             tableName: "image_generations";
             dataType: "string";
@@ -62,7 +62,7 @@ export declare const image_generations: import("drizzle-orm/pg-core").PgTableWit
             enumValues: [string, ...string[]];
             baseColumn: never;
         }, {}, {}>;
-        status: import("drizzle-orm/pg-core").PgColumn<{
+        status: import("drizzle-orm/pg-core/index.js").PgColumn<{
             name: "status";
             tableName: "image_generations";
             dataType: "string";
@@ -74,7 +74,7 @@ export declare const image_generations: import("drizzle-orm/pg-core").PgTableWit
             enumValues: [string, ...string[]];
             baseColumn: never;
         }, {}, {}>;
-        timestamp: import("drizzle-orm/pg-core").PgColumn<{
+        timestamp: import("drizzle-orm/pg-core/index.js").PgColumn<{
             name: "timestamp";
             tableName: "image_generations";
             dataType: "date";
